@@ -1,7 +1,8 @@
 import type { Component } from "solid-js";
+import IndexPage from "./pages/index";
 
 const App: Component = () => {
-  return <p class="text-4xl text-green-700 text-center py-20">Hello world!</p>;
+  return <IndexPage />;
 };
 
 export default App;
