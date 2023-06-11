@@ -422,6 +422,18 @@
   resolved "https://registry.yarnpkg.com/@hcaptcha/types/-/types-1.0.3.tgz#baf10a4361a45ff1c64862dfb8dc9bbc8292a8fe"
   integrity sha512-1mbU6eSGawRrqeahRrOzZo/SVLI6oZ5/azuBpSyVrRRR96CnS3fOVDWfzxpngfxKD0/I9Rwu6c/3ITqD8rXeTQ==
 
+"@iconify-icon/solid@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@iconify-icon/solid/-/solid-1.0.7.tgz#7a75f98e4f5e77fd7ffe6488ea7f801722b63ecd"
+  integrity sha512-IxznA/WwXddgyfl8oFv5gaH25/d7GULDsFl9oEEG1zrIyIdrbSElJLmL0CoIMuYOoiGrjZx79TIfTHbJCqocEg==
+  dependencies:
+    iconify-icon "^1.0.7"
+
+"@iconify/types@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
+  integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
+
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"
@@ -876,6 +888,13 @@ html-entities@2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-2.3.3.tgz#117d7626bece327fc8baace8868fa6f5ef856e46"
   integrity sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==
+
+iconify-icon@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/iconify-icon/-/iconify-icon-1.0.7.tgz#d7e1f5d45a88486abcc977583da62e6e9e635572"
+  integrity sha512-MxaO3Jhf3f5ymPWGHR9x74f90TNKcq1D+B2iGucGhVtqAgbC9EtM06kKiTGH2CKELNnexckwhrA3/+OpT4HKFw==
+  dependencies:
+    "@iconify/types" "^2.0.0"
 
 inflight@^1.0.4:
   version "1.0.6"
