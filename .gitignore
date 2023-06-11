@@ -1,2 +1,11 @@
+# Dependencies
 node_modules/
+
+# Build files
 dist/
+
+# Environment variables
+.env.local
+
+# Editor settings
+.vscode/
