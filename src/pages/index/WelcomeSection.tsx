@@ -1,14 +1,21 @@
 import { Icon } from "@iconify-icon/solid";
+import classNames from "classnames";
 import { Component } from "solid-js";
 import { Social } from "../../types/social";
 import { SOCIAL_LINKEDIN_URL } from "../../utils/constants";
+import { Classes } from "../../utils/styles";
 
 const WelcomeSection: Component = () => {
   return (
-    <div class="min-h-screen px-5 py-6">
+    <div
+      class={classNames(
+        "min-h-screen px-5 py-6 bg-white dark:bg-gray-900 text-black dark:text-stone-400 dark:tracking-wide",
+        Classes.TEXT_NORMAL
+      )}
+    >
       <div class="h-full place-items-center flex flex-wrap-reverse md:flex-nowrap gap-x-5 justify-center px-10 md:px-20">
         <div class="w-full space-y-10 font-display leading-loose">
-          <h1 class="text-4xl font-bold">
+          <h1 class={classNames("text-4xl", Classes.TEXT_BOLD)}>
             <Icon
               inline
               icon="fluent-emoji-flat:globe-showing-asia-australia"
@@ -18,7 +25,7 @@ const WelcomeSection: Component = () => {
           <p class="text-3xl italic font-light tracking-wide">
             I am Richard Dominick.
           </p>
-          <p class="text-xl">
+          <p class="text-xl tracking-wide">
             Year 3 undergraduate @ NUS Computing & Business, Singapore. Loves
             coding, learning and just exploring new things.
           </p>
@@ -27,7 +34,10 @@ const WelcomeSection: Component = () => {
               href={SOCIAL_LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              class="w-fit transition bg-sky-50 hover:bg-sky-100 text-sky-600 font-medium tracking-wide px-3 py-2 rounded space-x-2 flex items-center shadow-md hover:shadow shadow-sky-100 hover:shadow-sky-300"
+              class={classNames(
+                "w-fit transition bg-sky-50 hover:bg-sky-100 text-sky-600 tracking-wide px-3 py-2 rounded space-x-2 flex items-center shadow-md hover:shadow shadow-sky-100 hover:shadow-sky-300",
+                Classes.TEXT_MEDIUM
+              )}
             >
               <Icon
                 inline
