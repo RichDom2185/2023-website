@@ -32,7 +32,7 @@ const WelcomeSection: Component = () => {
             Year 3 undergraduate @ NUS Computing & Business, Singapore. Loves
             coding, learning and just exploring new things.
           </p>
-          <div class="flex flex-wrap gap-x-6 gap-y-10 items-center">
+          <div class="flex flex-wrap gap-x-6 gap-y-10 items-center select-none">
             <a
               href={SOCIAL_LINKEDIN_URL}
               target="_blank"
@@ -64,7 +64,7 @@ const WelcomeSection: Component = () => {
             </span>
           </div>
         </div>
-        <div class="w-1/2 lg:w-full flex justify-center items-center">
+        <div class="w-1/2 lg:w-full flex justify-center items-center select-none">
           <img src={avatarUrl} alt="avatar" class="w-full lg:w-3/4 xl:w-2/3" />
         </div>
       </div>
