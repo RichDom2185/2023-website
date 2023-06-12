@@ -2,12 +2,17 @@ import { ParentComponent } from "solid-js";
 
 type Props = {
   to: string;
+  hoverClass?: string;
 };
 
-const ExternalLink: ParentComponent<Props> = ({ to, children }) => {
+const ExternalLink: ParentComponent<Props> = ({ to, hoverClass, children }) => {
   return (
     <a
-      class="hover:text-blue-600 transition-colors duration-100"
+      class="transition-colors duration-100"
+      classList={{
+        "hover:text-blue-600": !hoverClass,
+        [hoverClass]: !!hoverClass,
+      }}
       href={to}
       target="_blank"
       rel="noopener noreferrer"
