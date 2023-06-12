@@ -13,7 +13,9 @@ const Sidebar: Component = () => {
   return (
     <div
       class={classNames(
-        "min-h-screen flex flex-col justify-between text-2xl md:text-3xl leading-none px-3 py-4 md:px-5 md:py-6",
+        "h-screen sticky top-0 flex flex-col justify-between",
+        "text-2xl md:text-3xl",
+        "leading-none px-3 py-4 md:px-5 md:py-6",
         "bg-white dark:bg-zinc-800"
       )}
     >
@@ -25,7 +27,10 @@ const Sidebar: Component = () => {
               "text-stone-500 hover:text-black",
               "dark:text-stone-400 dark:hover:text-stone-300",
             ],
-            "inline-block w-[2.0625rem] md:w-[2.5rem] font-normal hover:font-black transition-[color,font-weight]"
+            "select-none",
+            "inline-block w-[2.0625rem] md:w-[2.5rem]",
+            "font-normal hover:font-black",
+            "transition-[color,font-weight]"
           )}
         >
           RD
