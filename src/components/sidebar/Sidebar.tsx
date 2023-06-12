@@ -31,11 +31,16 @@ const Sidebar: Component = () => {
           RD
         </a>
       </div>
-      <div class="flex flex-col gap-y-2 md:gap-y-3 items-center">
+      <div
+        class={classNames(
+          "flex flex-col gap-y-2 md:gap-y-3 items-center",
+          "text-black dark:text-stone-400"
+        )}
+      >
         <span
           class={classNames(
             "mb-2 text-xs uppercase vertical-lr select-none",
-            "text-stone-500 dark:text-stone-400"
+            "text-stone-500"
           )}
         >
           Contact me:
