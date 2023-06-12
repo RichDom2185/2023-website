@@ -11,10 +11,10 @@ import SocialLink from "./SocialLink";
 const Sidebar: Component = () => {
   return (
     <div class="min-h-screen flex flex-col justify-between text-2xl md:text-3xl leading-none px-3 py-4 md:px-5 md:py-6">
-      <div class="relative">
+      <div class="text-center">
         <a
           href="/"
-          class="absolute font-normal hover:font-black transition-[color,font-weight] text-zinc-500 hover:text-black"
+          class="inline-block w-[2.0625rem] md:w-[2.5rem] font-normal hover:font-black transition-[color,font-weight] text-zinc-500 hover:text-black"
         >
           RD
         </a>
