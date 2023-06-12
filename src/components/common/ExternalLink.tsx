@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { ParentComponent } from "solid-js";
 
 type Props = {
@@ -8,7 +9,10 @@ type Props = {
 const ExternalLink: ParentComponent<Props> = ({ to, hoverClass, children }) => {
   return (
     <a
-      class="transition-colors duration-100"
+      class={classNames(
+        "transition-colors duration-100",
+        "text-black dark:text-stone-400"
+      )}
       classList={{
         "hover:text-blue-600": !hoverClass,
         [hoverClass]: !!hoverClass,

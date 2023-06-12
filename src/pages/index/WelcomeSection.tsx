@@ -9,7 +9,9 @@ const WelcomeSection: Component = () => {
   return (
     <div
       class={classNames(
-        "min-h-screen px-5 py-6 bg-white dark:bg-gray-900 text-black dark:text-stone-400 dark:tracking-wide",
+        "bg-white dark:bg-zinc-900",
+        "text-black dark:text-stone-400",
+        "min-h-screen px-5 py-6 dark:tracking-wide",
         Classes.TEXT_NORMAL
       )}
     >
@@ -35,7 +37,17 @@ const WelcomeSection: Component = () => {
               target="_blank"
               rel="noopener noreferrer"
               class={classNames(
-                "w-fit transition bg-sky-50 hover:bg-sky-100 text-sky-600 tracking-wide px-3 py-2 rounded space-x-2 flex items-center shadow-md hover:shadow shadow-sky-100 hover:shadow-sky-300",
+                [
+                  "bg-sky-50 hover:bg-sky-100",
+                  "dark:bg-sky-800 dark:hover:bg-sky-700",
+                ],
+                [
+                  "shadow-md dark:shadow hover:shadow",
+                  "shadow-sky-100 hover:shadow-sky-300",
+                  "dark:shadow-sky-950 dark:hover:shadow-sky-950",
+                ],
+                "text-sky-600 dark:text-sky-200",
+                "w-fit transition tracking-wide px-3 py-2 rounded space-x-2 flex items-center",
                 Classes.TEXT_MEDIUM
               )}
             >
