@@ -1,6 +1,7 @@
 import { Icon } from "@iconify-icon/solid";
 import classNames from "classnames";
 import { Component } from "solid-js";
+import avatarUrl from "../../assets/svg/avatar.svg";
 import { Social } from "../../types/social";
 import { SOCIAL_LINKEDIN_URL } from "../../utils/constants";
 import { Classes } from "../../utils/styles";
@@ -15,7 +16,7 @@ const WelcomeSection: Component = () => {
         Classes.TEXT_NORMAL
       )}
     >
-      <div class="h-full place-items-center flex flex-wrap-reverse md:flex-nowrap gap-x-5 justify-center px-10 md:px-20">
+      <div class="h-full place-items-center flex flex-wrap-reverse md:flex-nowrap gap-x-5 gap-y-6 justify-center px-10 md:px-20">
         <div class="w-full space-y-10 font-display leading-loose">
           <h1 class={classNames("text-4xl", Classes.TEXT_BOLD)}>
             <Icon
@@ -64,9 +65,7 @@ const WelcomeSection: Component = () => {
           </div>
         </div>
         <div class="w-1/2 lg:w-full flex justify-center items-center">
-          <span class="w-2/3 px-3 py-16 text-center text-neutral-300 outline-2 outline-dashed">
-            placeholder avatar
-          </span>
+          <img src={avatarUrl} alt="avatar" class="w-full lg:w-3/4 xl:w-2/3" />
         </div>
       </div>
     </div>
