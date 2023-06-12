@@ -6,7 +6,12 @@ type Props = {
 
 const ExternalLink: ParentComponent<Props> = ({ to, children }) => {
   return (
-    <a href={to} target="_blank" rel="noopener noreferrer">
+    <a
+      class="hover:text-blue-600 transition-colors duration-100"
+      href={to}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {children}
     </a>
   );

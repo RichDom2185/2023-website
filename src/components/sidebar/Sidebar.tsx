@@ -9,7 +9,7 @@ import SocialLink from "./SocialLink";
 
 const Sidebar: Component = () => {
   return (
-    <div>
+    <div class="text-3xl flex flex-col leading-none w-min px-2 py-3 gap-y-1">
       <SocialLink type={Social.GITHUB} to={SOCIAL_GITHUB_URL} />
       <SocialLink type={Social.GITLAB} to={SOCIAL_GITLAB_URL} />
       <SocialLink type={Social.LINKEDIN} to={SOCIAL_LINKEDIN_URL} />
