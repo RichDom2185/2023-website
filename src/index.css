@@ -11,3 +11,11 @@
 .vertical-lr {
   writing-mode: vertical-lr;
 }
+
+:root {
+  --header-height: 4rem;
+}
+
+.header + * {
+  margin-top: calc(var(--header-height) * -1);
+}

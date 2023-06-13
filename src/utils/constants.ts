@@ -16,3 +16,4 @@ export const SOCIAL_EMAIL_URL: string =
 export const REPOSITORY_URL: string =
   import.meta.env.VITE_REPOSITORY_URL ??
   "https://github.com/RichDom2185/richdom2185.github.io";
+export const BLOG_URL: string = import.meta.env.VITE_BLOG_URL ?? "";
