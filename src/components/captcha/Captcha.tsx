@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import HCaptcha from "solid-hcaptcha";
 import { Component, createSignal, onMount } from "solid-js";
 import { HCAPTCHA_SITE_KEY } from "../../utils/constants";
@@ -19,8 +20,16 @@ const Captcha: Component<Props> = ({ handleVerify }) => {
     });
   });
 
+  // Reversed engineered from iframe:
+  // Size of iframe is 303x78
   return (
-    <div class="mx-2 my-3">
+    <div
+      class={classNames(
+        "overflow-clip flex justify-center items-center rounded shadow-md",
+        // Shrink iframe to hide borders
+        "w-[296px] h-[72px]"
+      )}
+    >
       <HCaptcha
         theme={theme()}
         sitekey={HCAPTCHA_SITE_KEY}
