@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { Component } from "solid-js";
 import ExternalLink from "../../components/common/ExternalLink";
 import { Social } from "../../types/social";
+import { REPOSITORY_URL } from "../../utils/constants";
 
 const FooterSection: Component = () => {
   return (
@@ -24,10 +25,7 @@ const FooterSection: Component = () => {
             and{" "}
             <ExternalLink to="https://tailwindcss.com">Tailwind</ExternalLink>.
             View the source code on{" "}
-            <ExternalLink to="https://github.com/RichDom2185/richdom2185.github.io">
-              {Social.GITHUB}
-            </ExternalLink>
-            .
+            <ExternalLink to={REPOSITORY_URL}>{Social.GITHUB}</ExternalLink>.
           </span>
         </span>
       </p>
