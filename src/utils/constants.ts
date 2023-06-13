@@ -17,3 +17,6 @@ export const REPOSITORY_URL: string =
   import.meta.env.VITE_REPOSITORY_URL ??
   "https://github.com/RichDom2185/richdom2185.github.io";
 export const BLOG_URL: string = import.meta.env.VITE_BLOG_URL ?? "";
+
+export const PLACEHOLDERS_ENABLED: boolean =
+  import.meta.env.VITE_PLACEHOLDERS_ENABLED === "true" ?? false;

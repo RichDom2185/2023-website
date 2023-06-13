@@ -30,6 +30,7 @@ jobs:
           VITE_SOCIAL_EMAIL_URL: ${{ secrets.VITE_SOCIAL_EMAIL_URL }}
           VITE_REPOSITORY_URL: ${{ secrets.VITE_REPOSITORY_URL }}
           VITE_BLOG_URL: ${{ secrets.VITE_BLOG_URL }}
+          VITE_PLACEHOLDERS_ENABLED: ${{ secrets.VITE_PLACEHOLDERS_ENABLED }}
       - name: Push to deployment repository
         uses: peaceiris/actions-gh-pages@v3
         with:

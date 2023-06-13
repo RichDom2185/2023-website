@@ -1,8 +1,12 @@
 import classNames from "classnames";
 import { ParentComponent } from "solid-js";
+import { PLACEHOLDERS_ENABLED } from "../utils/constants";
 import { Classes } from "../utils/styles";
 
 const Placeholder: ParentComponent = ({ children }) => {
+  if (!PLACEHOLDERS_ENABLED) {
+    return <>{children}</>;
+  }
   return (
     <div class="relative">
       <span
