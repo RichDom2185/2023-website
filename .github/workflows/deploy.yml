@@ -1,0 +1,39 @@
+name: Deploy site
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Build site
+        run: yarn build
+        env:
+          VITE_HCAPTCHA_SITEKEY: ${{ secrets.VITE_HCAPTCHA_SITEKEY }}
+          VITE_BACKEND_URL: ${{ secrets.VITE_BACKEND_URL }}
+          VITE_SOCIAL_GITHUB_URL: ${{ secrets.VITE_SOCIAL_GITHUB_URL }}
+          VITE_SOCIAL_GITLAB_URL: ${{ secrets.VITE_SOCIAL_GITLAB_URL }}
+          VITE_SOCIAL_LINKEDIN_URL: ${{ secrets.VITE_SOCIAL_LINKEDIN_URL }}
+          VITE_SOCIAL_EMAIL_URL: ${{ secrets.VITE_SOCIAL_EMAIL_URL }}
+          VITE_REPOSITORY_URL: ${{ secrets.VITE_REPOSITORY_URL }}
+          VITE_BLOG_URL: ${{ secrets.VITE_BLOG_URL }}
+      - name: Push to deployment repository
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          external_repository: RichDom2185/richdom2185.github.io
+          deploy_key: ${{ secrets.SITE_DEPLOY_KEY }}
+          publish_dir: ./dist
+          cname: richarddominick.me
