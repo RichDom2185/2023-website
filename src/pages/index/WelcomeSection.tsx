@@ -64,8 +64,13 @@ const WelcomeSection: Component = () => {
             </span>
           </div>
         </div>
-        <div class="w-1/2 lg:w-full flex justify-center items-center select-none">
-          <img src={avatarUrl} alt="avatar" class="w-full lg:w-3/4 xl:w-2/3" />
+        <div class="w-3/4 sm:w-1/2 lg:w-full flex justify-center items-center select-none">
+          <img
+            src={avatarUrl}
+            loading="lazy"
+            alt="avatar"
+            class="w-full lg:w-3/4 xl:w-2/3"
+          />
         </div>
       </div>
     </div>
