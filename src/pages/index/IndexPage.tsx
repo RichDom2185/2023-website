@@ -1,6 +1,7 @@
 import { Component } from "solid-js";
 import Header from "../../components/header/Header";
 import Sidebar from "../../components/sidebar/Sidebar";
+import AboutSection from "./AboutSection";
 import ContactSection from "./ContactSection";
 import ExperienceSection from "./ExperienceSection";
 import FooterSection from "./FooterSection";
@@ -13,8 +14,9 @@ const IndexPage: Component = () => {
       <div class="grid grid-cols-1">
         <Header />
         <WelcomeSection />
-        {!false && <ExperienceSection />}
-        {!false && <ContactSection />}
+        <AboutSection />
+        <ExperienceSection />
+        <ContactSection />
         <FooterSection />
       </div>
     </div>
