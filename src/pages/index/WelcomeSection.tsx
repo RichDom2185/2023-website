@@ -60,7 +60,7 @@ const WelcomeSection: Component = () => {
               <span>Visit me on {Social.LINKEDIN}</span>
             </a>
             <span class="italic text-neutral-400">
-              Rest of the website is coming soon!
+              Note: some parts of this website are still under construction.
             </span>
           </div>
         </div>

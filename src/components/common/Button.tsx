@@ -32,7 +32,7 @@ const Button: Component<Props> = ({ label, onClick, isEnabled, leftIcon }) => {
         )]: isEnabled?.() && !useEnabledState(),
       }}
       class={classNames(
-        "px-2 py-1 transition duration-100",
+        "px-2 py-1 transition",
         "select-none rounded",
         "hover:shadow-md",
         "hover:text-white dark:hover:text-stone-900",
