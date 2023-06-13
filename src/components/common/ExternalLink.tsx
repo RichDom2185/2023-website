@@ -8,7 +8,6 @@ type Props = {
 const ExternalLink: ParentComponent<Props> = ({ to, hoverClass, children }) => {
   return (
     <a
-      class="transition-colors duration-100"
       classList={{
         "hover:text-blue-600": !hoverClass,
         "dark:hover:text-blue-300": !hoverClass,

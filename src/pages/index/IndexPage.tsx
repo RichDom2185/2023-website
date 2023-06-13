@@ -5,7 +5,7 @@ import WelcomeSection from "./WelcomeSection";
 
 const IndexPage: Component = () => {
   return (
-    <div class="flex">
+    <div class="flex transition-colors duration-100">
       <Sidebar />
       <div class="grid grid-cols-1">
         <WelcomeSection />
