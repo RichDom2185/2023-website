@@ -7,7 +7,7 @@ const Section: ParentComponent = ({ children }) => {
     <div
       class={classNames(
         Classes.BACKGROUND_DYNAMIC_COLOR,
-        "text-zinc-900 dark:text-stone-400",
+        Classes.TEXT_DYNAMIC_COLOR,
         "px-5 py-10 dark:tracking-wide",
         "px-10 md:px-20",
         Classes.TEXT_NORMAL

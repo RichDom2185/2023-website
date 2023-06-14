@@ -45,7 +45,7 @@ const Header: Component = () => {
               "absolute top-0 right-0",
               "select-none bg-white dark:bg-zinc-600",
               "bg-opacity-95 shadow-lg dark:bg-opacity-90",
-              "text-black dark:text-white",
+              [Classes.TEXT_STATIC_BLACK, "dark:text-white"],
               // FIXME: Blur isn't working for some reason
               "backdrop-blur rounded-lg"
             )}

@@ -13,7 +13,7 @@ const inputClasses = classNames(
   "w-full rounded px-3 py-2",
   "bg-white dark:bg-slate-700 dark:bg-opacity-20",
   "shadow-none",
-  "text-black dark:text-stone-300 font-normal"
+  [Classes.TEXT_STATIC_BLACK, "dark:text-stone-300 font-normal"]
 );
 
 // TODO: Refactor into form components
