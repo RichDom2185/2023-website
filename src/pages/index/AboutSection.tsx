@@ -2,19 +2,12 @@ import { Icon } from "@iconify-icon/solid";
 import classNames from "classnames";
 import { Component } from "solid-js";
 import ExternalLink from "../../components/common/ExternalLink";
+import Section from "../../components/ui/Section";
 import { Classes } from "../../utils/styles";
 
 const AboutSection: Component = () => {
   return (
-    <div
-      class={classNames(
-        "bg-white dark:bg-zinc-900",
-        "text-zinc-900 dark:text-stone-400",
-        "px-5 py-10 dark:tracking-wide",
-        "px-10 md:px-20",
-        Classes.TEXT_NORMAL
-      )}
-    >
+    <Section>
       <div class="w-full lg:w-5/6 space-y-10 mx-auto underline-offset-4 dark:tracking-wide">
         <h1
           class={classNames(
@@ -97,7 +90,7 @@ const AboutSection: Component = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 
