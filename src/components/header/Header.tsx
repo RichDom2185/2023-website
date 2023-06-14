@@ -59,6 +59,7 @@ const Header: Component = () => {
                   const pdf = await getResume(token);
                   const url = window.URL.createObjectURL(pdf);
                   window.open(url, "_blank");
+                  toggleIsCaptchaVisible();
                 }}
               />
             </Placeholder>
