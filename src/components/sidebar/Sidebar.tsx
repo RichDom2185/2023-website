@@ -24,10 +24,9 @@ const Sidebar: Component = () => {
         <a
           href="/"
           class={classNames(
-            [
-              "text-stone-500 hover:text-black",
-              "dark:text-stone-400 dark:hover:text-stone-300",
-            ],
+            "text-stone-500 hover:text-black",
+            "dark:text-stone-400 dark:hover:text-stone-300",
+
             "select-none",
             "inline-block w-[2.0625rem] md:w-[2.5rem]",
             "font-normal hover:font-black",

@@ -38,15 +38,13 @@ const WelcomeSection: Component = () => {
               target="_blank"
               rel="noopener noreferrer"
               class={classNames(
-                [
-                  "bg-sky-50 hover:bg-sky-100",
-                  "dark:bg-sky-800 dark:hover:bg-sky-700",
-                ],
-                [
-                  "shadow-md dark:shadow hover:shadow",
-                  "shadow-sky-100 hover:shadow-sky-300",
-                  "dark:shadow-sky-950 dark:hover:shadow-sky-950",
-                ],
+                "bg-sky-50 hover:bg-sky-100",
+                "dark:bg-sky-800 dark:hover:bg-sky-700",
+
+                "shadow-md dark:shadow hover:shadow",
+                "shadow-sky-100 hover:shadow-sky-300",
+                "dark:shadow-sky-950 dark:hover:shadow-sky-950",
+
                 "text-sky-600 dark:text-sky-200",
                 "w-fit transition tracking-wide px-3 py-2 rounded space-x-2 flex items-center",
                 Classes.TEXT_MEDIUM
