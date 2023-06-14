@@ -7,6 +7,7 @@ import {
   SOCIAL_GITLAB_URL,
   SOCIAL_LINKEDIN_URL,
 } from "../../utils/constants";
+import { Classes } from "../../utils/styles";
 import SocialLink from "./SocialLink";
 
 const Sidebar: Component = () => {
@@ -39,7 +40,7 @@ const Sidebar: Component = () => {
       <div
         class={classNames(
           "flex flex-col gap-y-2 md:gap-y-3 items-center",
-          "text-black dark:text-stone-400"
+          Classes.TEXT_DYNAMIC_COLOR
         )}
       >
         <span

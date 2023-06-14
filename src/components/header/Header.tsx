@@ -16,7 +16,7 @@ const Header: Component = () => {
       class={classNames(
         "header",
         Classes.BACKGROUND_DYNAMIC_COLOR,
-        "text-black dark:text-stone-400",
+        Classes.TEXT_DYNAMIC_COLOR,
         "bg-opacity-70 dark:bg-opacity-50",
         "backdrop-blur",
         "sticky top-0 w-full h-[--header-height]",

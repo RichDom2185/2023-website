@@ -11,7 +11,7 @@ const WelcomeSection: Component = () => {
     <div
       class={classNames(
         Classes.BACKGROUND_DYNAMIC_COLOR,
-        "text-black dark:text-stone-400",
+        Classes.TEXT_DYNAMIC_COLOR,
         "min-h-screen px-5 py-6 dark:tracking-wide",
         Classes.TEXT_NORMAL
       )}

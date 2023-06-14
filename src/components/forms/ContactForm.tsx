@@ -33,7 +33,7 @@ const ContactForm: Component = () => {
             "px-4 py-4",
             "bg-slate-100 dark:bg-slate-700",
             "bg-opacity-95 shadow-md dark:bg-opacity-20",
-            "text-black dark:text-stone-400",
+            Classes.TEXT_DYNAMIC_COLOR,
             "rounded-lg"
           )}
         >
