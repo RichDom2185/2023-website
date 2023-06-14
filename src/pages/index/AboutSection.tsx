@@ -3,7 +3,21 @@ import classNames from "classnames";
 import { Component } from "solid-js";
 import ExternalLink from "../../components/common/ExternalLink";
 import Section from "../../components/ui/Section";
+import { Technology, technologyToIconMap } from "../../types/general";
 import { Classes } from "../../utils/styles";
+
+const familiarTech: readonly Technology[] = [
+  Technology.PYTHON,
+  Technology.TYPESCRIPT,
+  Technology.REACT,
+  Technology.R,
+  Technology.GOLANG,
+  Technology.JAVASCRIPT,
+  Technology.POSTGRESQL,
+  Technology.JEKYLL,
+  Technology.JAVA,
+  Technology.TAILWINDCSS,
+];
 
 const AboutSection: Component = () => {
   return (
@@ -54,38 +68,12 @@ const AboutSection: Component = () => {
               Experiences. Some of the technologies I am most familiar with
               include:
             </p>
-            {/* TODO: Refactor into custom component */}
             <ul class="grid grid-cols-2 leading-relaxed">
-              <li class="list-disc list-inside">
-                <Icon inline icon="devicon:python" /> Python
-              </li>
-              <li class="list-disc list-inside">
-                <Icon inline icon="devicon:typescript" /> TypeScript
-              </li>
-              <li class="list-disc list-inside">
-                <Icon inline icon="devicon:react" /> React
-              </li>
-              <li class="list-disc list-inside">
-                <Icon inline icon="devicon:r" /> R
-              </li>
-              <li class="list-disc list-inside">
-                <Icon inline icon="devicon:go-wordmark" /> Golang
-              </li>
-              <li class="list-disc list-inside">
-                <Icon inline icon="devicon:javascript" /> JavaScript
-              </li>
-              <li class="list-disc list-inside">
-                <Icon inline icon="devicon:postgresql" /> PostgreSQL
-              </li>
-              <li class="list-disc list-inside">
-                <Icon inline icon="devicon:jekyll" /> Jekyll
-              </li>
-              <li class="list-disc list-inside">
-                <Icon inline icon="devicon:java" /> Java
-              </li>
-              <li class="list-disc list-inside">
-                <Icon inline icon="devicon:tailwindcss" /> TailwindCSS
-              </li>
+              {familiarTech.map((name) => (
+                <li class="list-disc list-inside">
+                  <Icon inline icon={technologyToIconMap[name]} /> {name}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
