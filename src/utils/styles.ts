@@ -5,4 +5,6 @@ export const Classes = Object.freeze({
   TEXT_BOLD: ["font-bold", "dark:font-semibold"],
   TEXT_NORMAL: ["font-normal", "dark:font-light"],
   TEXT_MEDIUM: ["font-medium", "dark:font-normal"],
+
+  BACKGROUND_DYNAMIC_COLOR: "bg-white dark:bg-zinc-900",
 });

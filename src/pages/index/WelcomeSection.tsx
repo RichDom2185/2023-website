@@ -10,7 +10,7 @@ const WelcomeSection: Component = () => {
   return (
     <div
       class={classNames(
-        "bg-white dark:bg-zinc-900",
+        Classes.BACKGROUND_DYNAMIC_COLOR,
         "text-black dark:text-stone-400",
         "min-h-screen px-5 py-6 dark:tracking-wide",
         Classes.TEXT_NORMAL

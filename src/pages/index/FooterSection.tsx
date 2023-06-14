@@ -3,12 +3,13 @@ import { Component } from "solid-js";
 import ExternalLink from "../../components/common/ExternalLink";
 import { Social } from "../../types/social";
 import { REPOSITORY_URL } from "../../utils/constants";
+import { Classes } from "../../utils/styles";
 
 const FooterSection: Component = () => {
   return (
     <div
       class={classNames(
-        "bg-white dark:bg-zinc-900",
+        Classes.BACKGROUND_DYNAMIC_COLOR,
         "text-neutral-400 dark:text-neutral-600",
         "px-10 py-6 text-center"
       )}

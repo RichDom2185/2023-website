@@ -24,7 +24,7 @@ const Placeholder: ParentComponent = ({ children }) => {
           class={classNames(
             "absolute top-1 right-1 bottom-1 left-1",
             "mx-5",
-            "bg-white dark:bg-zinc-900",
+            Classes.BACKGROUND_DYNAMIC_COLOR,
             "bg-opacity-50 dark:bg-opacity-60"
           )}
         >
