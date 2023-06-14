@@ -68,7 +68,7 @@ const AboutSection: Component = () => {
               Experiences. Some of the technologies I am most familiar with
               include:
             </p>
-            <ul class="grid grid-cols-2 leading-relaxed">
+            <ul class="columns-2 leading-relaxed">
               <For each={familiarTech}>
                 {(name) => (
                   <li class="list-disc list-inside">
