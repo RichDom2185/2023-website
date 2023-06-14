@@ -7,9 +7,16 @@ type Props = {
   onClick: () => void;
   isEnabled?: () => boolean;
   leftIcon?: string;
+  rightIcon?: string;
 };
 
-const Button: Component<Props> = ({ label, onClick, isEnabled, leftIcon }) => {
+const Button: Component<Props> = ({
+  label,
+  onClick,
+  isEnabled,
+  leftIcon,
+  rightIcon,
+}) => {
   // Override default hover styles when useEnabledState is true
   const [useEnabledState, setUseEnabledState] = createSignal(false);
 
@@ -54,6 +61,8 @@ const Button: Component<Props> = ({ label, onClick, isEnabled, leftIcon }) => {
       {leftIcon && <Icon inline icon={leftIcon} />}
       {leftIcon && " "}
       {text()}
+      {rightIcon && " "}
+      {rightIcon && <Icon inline icon={rightIcon} />}
     </button>
   );
 };
