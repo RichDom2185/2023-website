@@ -1,6 +1,6 @@
 import { Icon } from "@iconify-icon/solid";
 import classNames from "classnames";
-import { Component } from "solid-js";
+import { Component, For } from "solid-js";
 import ExternalLink from "../../components/common/ExternalLink";
 import Section from "../../components/ui/Section";
 import { Technology, technologyToIconMap } from "../../types/general";
@@ -69,11 +69,13 @@ const AboutSection: Component = () => {
               include:
             </p>
             <ul class="grid grid-cols-2 leading-relaxed">
-              {familiarTech.map((name) => (
-                <li class="list-disc list-inside">
-                  <Icon inline icon={technologyToIconMap[name]} /> {name}
-                </li>
-              ))}
+              <For each={familiarTech}>
+                {(name) => (
+                  <li class="list-disc list-inside">
+                    <Icon inline icon={technologyToIconMap[name]} /> {name}
+                  </li>
+                )}
+              </For>
             </ul>
           </div>
         </div>
