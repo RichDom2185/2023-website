@@ -26,7 +26,11 @@ const Header: Component = () => {
       )}
     >
       {/* TODO: Enable the following buttons when ready */}
-      <Button label="Blog" onClick={() => window.open(BLOG_URL, "_blank")} />
+      <Button
+        label="Blog"
+        rightIcon="heroicons-outline:external-link"
+        onClick={() => window.open(BLOG_URL, "_blank")}
+      />
       {/* <Button label="Apps" onClick={() => alert("apps")} /> */}
       {/* <Button label="Experiments" onClick={() => alert("experiments")} /> */}
       <div class="relative">
