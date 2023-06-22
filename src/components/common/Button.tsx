@@ -4,15 +4,16 @@ import { Component, createMemo, createSignal } from "solid-js";
 
 type Props = {
   label: string | (() => string);
-  onClick: () => void;
+  onClick?: () => void;
   isEnabled?: () => boolean;
   leftIcon?: string;
   rightIcon?: string;
 };
 
+// TODO: Investigate why optional props here are never typed as undefined
 const Button: Component<Props> = ({
   label,
-  onClick,
+  onClick = () => {},
   isEnabled,
   leftIcon,
   rightIcon,
