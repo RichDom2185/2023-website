@@ -37,7 +37,7 @@ const Header: Component = () => {
         <Button
           label="Resume"
           onClick={() => toggleIsCaptchaVisible()}
-          isEnabled={isCaptchaVisible}
+          getEnabledState={isCaptchaVisible}
         />
         {isCaptchaVisible() && (
           // TODO: Possible refactor to own component

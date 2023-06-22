@@ -5,7 +5,7 @@ import { Component, createMemo, createSignal } from "solid-js";
 type Props = {
   label: string | (() => string);
   onClick?: () => void;
-  isEnabled?: () => boolean;
+  getEnabledState?: () => boolean;
   leftIcon?: string;
   rightIcon?: string;
 };
@@ -14,7 +14,7 @@ type Props = {
 const Button: Component<Props> = ({
   label,
   onClick = () => {},
-  isEnabled,
+  getEnabledState,
   leftIcon,
   rightIcon,
 }) => {
@@ -31,13 +31,13 @@ const Button: Component<Props> = ({
           "!bg-zinc-200 dark:!bg-zinc-600",
           "!bg-opacity-95 dark:!bg-opacity-90",
           "!shadow-none"
-        )]: isEnabled?.() && useEnabledState(),
+        )]: getEnabledState?.() && useEnabledState(),
         [classNames(
           "text-stone-900 dark:text-stone-200",
           "bg-zinc-200 dark:bg-zinc-600",
           "bg-opacity-95 dark:bg-opacity-90",
           "shadow-none"
-        )]: isEnabled?.() && !useEnabledState(),
+        )]: getEnabledState?.() && !useEnabledState(),
       }}
       class={classNames(
         "px-2 py-1 transition",
