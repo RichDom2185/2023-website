@@ -18,11 +18,12 @@ const inputClasses = classNames(
 
 // TODO: Refactor into form components
 const ContactForm: Component = () => {
-  const [emailValue, setEmailValue] = createSignal("");
-  const [telegramValue, setTelegramValue] = createSignal("");
-  const [messageValue, setMessageValue] = createSignal("");
+  const [getEmailValue, setEmailValue] = createSignal("");
+  const [getTelegramValue, setTelegramValue] = createSignal("");
+  const [getMessageValue, setMessageValue] = createSignal("");
 
-  const shouldWarn = () => !emailValue() && !telegramValue() && messageValue();
+  const shouldWarn = () =>
+    !getEmailValue() && !getTelegramValue() && getMessageValue();
 
   return (
     <div class="w-full lg:w-2/3 mx-auto">
@@ -56,7 +57,7 @@ const ContactForm: Component = () => {
                   name="email"
                   id="email"
                   placeholder="Email"
-                  value={emailValue()}
+                  value={getEmailValue()}
                   onInput={(e) => setEmailValue(e.currentTarget.value)}
                 />
               </div>
@@ -79,7 +80,7 @@ const ContactForm: Component = () => {
                   name="telegram"
                   id="telegram"
                   placeholder="Telegram ID"
-                  value={telegramValue()}
+                  value={getTelegramValue()}
                   onInput={(e) => setTelegramValue(e.currentTarget.value)}
                 />
               </div>
@@ -99,7 +100,7 @@ const ContactForm: Component = () => {
                 name="message"
                 id="message"
                 placeholder="Message"
-                value={messageValue()}
+                value={getMessageValue()}
                 onInput={(e) => setMessageValue(e.currentTarget.value)}
               />
             </div>

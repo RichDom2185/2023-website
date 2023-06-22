@@ -10,7 +10,7 @@ type Props = {
 const darkMode = window.matchMedia("(prefers-color-scheme:dark)");
 
 const Captcha: Component<Props> = ({ handleVerify }) => {
-  const [theme, setTheme] = createSignal<"light" | "dark">(
+  const [getTheme, setTheme] = createSignal<"light" | "dark">(
     darkMode.matches ? "dark" : "light"
   );
 
@@ -31,7 +31,7 @@ const Captcha: Component<Props> = ({ handleVerify }) => {
       )}
     >
       <HCaptcha
-        theme={theme()}
+        theme={getTheme()}
         sitekey={HCAPTCHA_SITE_KEY}
         onVerify={handleVerify}
       />
