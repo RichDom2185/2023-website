@@ -15,7 +15,7 @@ const ExperimentsPage: Component = () => {
         <div class="w-full lg:w-5/6 space-y-10 mx-auto underline-offset-4 dark:tracking-wide">
           <For each={projectYears}>
             {(year) => (
-              <>
+              <div class="space-y-4">
                 <h2
                   class={classNames(
                     "text-3xl font-display tracking-wider",
@@ -24,10 +24,27 @@ const ExperimentsPage: Component = () => {
                 >
                   {year}
                 </h2>
-                <For each={allProjects[year]}>
-                  {(project) => <ProjectDisplay {...project} />}
-                </For>
-              </>
+                <div
+                  class={classNames(
+                    "divide-y divide-stone-800"
+                    // "px-3 py-3",
+                    // "border rounded-lg border-dashed border-stone-500"
+                  )}
+                >
+                  <For each={allProjects[year]}>
+                    {(project) => (
+                      <div
+                        class={classNames(
+                          "pt-3 pb-4 px-4", // change to px-3 if above border is used
+                          "hover:bg-white hover:bg-opacity-5"
+                        )}
+                      >
+                        <ProjectDisplay {...project} />
+                      </div>
+                    )}
+                  </For>
+                </div>
+              </div>
             )}
           </For>
         </div>
