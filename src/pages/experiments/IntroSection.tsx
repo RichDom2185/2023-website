@@ -25,7 +25,14 @@ const IntroSection: Component = () => {
               Classes.TEXT_NORMAL
             )}
           >
-            <Placeholder />
+            <Placeholder disableOverlay>
+              <div class="space-y-6">
+                <p>This section is coming soon!</p>
+                <p class="text-sm">
+                  In the meantime, enjoy some test data below:
+                </p>
+              </div>
+            </Placeholder>
           </p>
         </div>
       </div>
