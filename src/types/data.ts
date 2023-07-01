@@ -1,3 +1,5 @@
+import { Technology } from "./general";
+
 type ProjectLink = {
   icon: string;
   url: string;
@@ -7,5 +9,6 @@ type ProjectLink = {
 export type Project = {
   name: string;
   description?: string;
-  links: ProjectLink[];
+  links?: ProjectLink[];
+  tech?: Technology[];
 };
