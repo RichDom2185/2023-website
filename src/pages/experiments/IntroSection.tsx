@@ -17,7 +17,7 @@ const IntroSection: Component = () => {
         >
           <Icon inline icon="twemoji:alembic" /> Experiments
         </h1>
-        <div class="w-full max-w-lg space-y-6">
+        <div class="w-full max-w-lg space-y-6 mx-auto">
           <p
             class={classNames(
               "text-md md:text-lg text-justify",

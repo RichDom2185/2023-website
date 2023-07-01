@@ -7,11 +7,11 @@ import { Classes } from "../../utils/styles";
 // TODO: Investigate why optional props here are never typed as undefined
 const ProjectDisplay: Component<Project> = ({ name, description, links }) => {
   return (
-    <div class="space-y-1">
+    <div>
       <h4 class={classNames(Classes.TEXT_MEDIUM, "text-xl")}>{name}</h4>
-      {description && <p>{description}</p>}
+      {description && <p class="mt-1">{description}</p>}
       {links?.length && (
-        <ul class="!mt-3 space-y-1 text-sm">
+        <ul class="mt-3 space-y-1 text-sm">
           <For each={links}>
             {(link) => (
               <li>
