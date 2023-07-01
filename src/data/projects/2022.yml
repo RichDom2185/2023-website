@@ -1,13 +1,17 @@
 - name: Some Test Project
   description: >
     This one has a description.
-    In fact, a multiline one
+    In fact, a multiline one.
   links:
     - icon: simple-icons:github
       url: https://github.com/
       label: View the source code on GitHub
 
 - name: Some Second Test Project
+  tech:
+    - React
+    - TypeScript
+    - TailwindCSS
   links:
     - icon: simple-icons:github
       url: https://github.com/
