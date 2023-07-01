@@ -9,11 +9,10 @@ type Props = {
 // for this trick to center the tooltips without a
 // fixed tooltip content width.
 const positionClasses = {
-  bottom: ["top-full left-1/2", "-translate-x-1/2"],
-  top: ["bottom-full left-1/2", "-translate-x-1/2"],
-  // TODO: Fix hardcoded 0.2em offset
-  left: ["top-1/2 right-full", "-translate-y-[calc(50%+0.2em)]"],
-  right: ["top-1/2 left-full", "-translate-y-[calc(50%+0.2em)]"],
+  bottom: ["top-full left-1/2", "-translate-x-1/2", "mt-1"],
+  top: ["bottom-full left-1/2", "-translate-x-1/2", "mb-1"],
+  left: ["top-1/2 right-full", "-translate-y-[calc(50%)]", "mr-1"],
+  right: ["top-1/2 left-full", "-translate-y-[calc(50%)]", "ml-1"],
 } satisfies {
   [key in Props["position"]]: classNames.Argument;
 };
