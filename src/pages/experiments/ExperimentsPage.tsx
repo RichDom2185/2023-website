@@ -7,13 +7,16 @@ import { allProjects, projectYears } from "../../data/projects";
 import { Classes } from "../../utils/styles";
 import IntroSection from "./IntroSection";
 
+// Sort the years in descending (reverse chronological) order
+const sortedYears = [...projectYears].sort((a, b) => b - a);
+
 const ExperimentsPage: Component = () => {
   return (
     <Page withHeader withSidebar>
       <IntroSection />
       <Section>
         <div class="w-full lg:w-5/6 space-y-10 mx-auto underline-offset-4 dark:tracking-wide">
-          <For each={projectYears}>
+          <For each={sortedYears}>
             {(year) => (
               <div class="space-y-4">
                 <h2
