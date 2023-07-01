@@ -1,10 +1,12 @@
+import classNames from "classnames";
 import { Component, For } from "solid-js";
-import Placeholder from "../../components/Placeholder";
 import ProjectDisplay from "../../components/data/ProjectDisplay";
 import Header from "../../components/header/Header";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Section from "../../components/ui/Section";
 import { allProjects, projectYears } from "../../data/projects";
+import { Classes } from "../../utils/styles";
+import IntroSection from "./IntroSection";
 
 const ExperimentsPage: Component = () => {
   return (
@@ -12,17 +14,27 @@ const ExperimentsPage: Component = () => {
       <Sidebar />
       <div class="grid grid-cols-1">
         <Header />
+        <IntroSection />
         <Section>
-          <Placeholder>
-            <h1>Experiments Page coming soon!</h1>
+          <div class="w-full lg:w-5/6 space-y-10 mx-auto underline-offset-4 dark:tracking-wide">
             <For each={projectYears}>
               {(year) => (
-                <For each={allProjects[year]}>
-                  {(project) => <ProjectDisplay {...project} />}
-                </For>
+                <>
+                  <h2
+                    class={classNames(
+                      "text-3xl font-display tracking-wider",
+                      Classes.TEXT_MEDIUM
+                    )}
+                  >
+                    {year}
+                  </h2>
+                  <For each={allProjects[year]}>
+                    {(project) => <ProjectDisplay {...project} />}
+                  </For>
+                </>
               )}
             </For>
-          </Placeholder>
+          </div>
         </Section>
       </div>
     </div>
