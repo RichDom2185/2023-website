@@ -4,10 +4,9 @@ import ProjectDisplay from "../../components/data/ProjectDisplay";
 import Header from "../../components/header/Header";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Section from "../../components/ui/Section";
-import { loadProjects } from "../../utils/data";
+import { allProjects, projectYears } from "../../data/projects";
 
 const ExperimentsPage: Component = () => {
-  const projects = loadProjects();
   return (
     <div class="flex transition-colors duration-100">
       <Sidebar />
@@ -16,8 +15,12 @@ const ExperimentsPage: Component = () => {
         <Section>
           <Placeholder>
             <h1>Experiments Page coming soon!</h1>
-            <For each={projects}>
-              {(project) => <ProjectDisplay {...project} />}
+            <For each={projectYears}>
+              {(year) => (
+                <For each={allProjects[year]}>
+                  {(project) => <ProjectDisplay {...project} />}
+                </For>
+              )}
             </For>
           </Placeholder>
         </Section>
