@@ -64,7 +64,7 @@ const ProjectDisplay: Component<Project> = ({
               >
                 <Icon
                   inline
-                  class="grayscale group-hover:grayscale-0 transition-all"
+                  class="dark:grayscale group-hover:grayscale-0 transition-all"
                   icon={technologyToIconMap[techItem]}
                 />
                 <Tooltip position="bottom">{techItem}</Tooltip>
