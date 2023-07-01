@@ -1,6 +1,6 @@
 import { Icon } from "@iconify-icon/solid";
 import { Component, For } from "solid-js";
-import { Project } from "../../utils/data";
+import { Project } from "../../types/data";
 
 // TODO: Investigate why optional props here are never typed as undefined
 const ProjectDisplay: Component<Project> = ({ name, description, links }) => {
