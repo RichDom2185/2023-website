@@ -15,7 +15,7 @@ const ExperimentsPage: Component = () => {
     <Page withHeader withSidebar>
       <IntroSection />
       <Section>
-        <div class="w-full lg:w-5/6 space-y-10 mx-auto underline-offset-4 dark:tracking-wide">
+        <div class={classNames(Classes.SECTION_BODY_RESPONSIVE, "space-y-10")}>
           <For each={sortedYears}>
             {(year) => (
               <div class="space-y-4">
@@ -29,7 +29,7 @@ const ExperimentsPage: Component = () => {
                 </h2>
                 <div
                   class={classNames(
-                    "divide-y divide-stone-800"
+                    "divide-y divide-neutral-300 dark:divide-stone-800"
                     // "px-3 py-3",
                     // "border rounded-lg border-dashed border-stone-500"
                   )}
@@ -39,7 +39,7 @@ const ExperimentsPage: Component = () => {
                       <div
                         class={classNames(
                           "pt-3 pb-4 px-4", // change to px-3 if above border is used
-                          "hover:bg-white hover:bg-opacity-5"
+                          Classes.HOVER_DYNAMIC_BACKGROUND
                         )}
                       >
                         <ProjectDisplay {...project} />

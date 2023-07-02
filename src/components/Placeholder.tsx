@@ -14,19 +14,20 @@ const Placeholder: ParentComponent<Props> = ({
   if (!PLACEHOLDERS_ENABLED) {
     return <>{children}</>;
   }
+  const enableOverlay = children && !disableOverlay;
   return (
     <div class="relative">
       <span
         class={classNames(
           "block mx-5 px-3",
-          { "py-16": !children, "py-3": !!children },
+          { "py-16": !enableOverlay, "py-3": !!enableOverlay },
           "text-center text-neutral-300 border-2 border-dashed",
           "select-none"
         )}
       >
         {children ?? "placeholder content"}
       </span>
-      {children && !disableOverlay && (
+      {enableOverlay && (
         <div
           class={classNames(
             "absolute top-1 right-1 bottom-1 left-1",

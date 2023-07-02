@@ -22,7 +22,7 @@ const familiarTech: readonly Technology[] = [
 const AboutSection: Component = () => {
   return (
     <Section>
-      <div class="w-full lg:w-5/6 space-y-10 mx-auto underline-offset-4 dark:tracking-wide">
+      <div class={classNames(Classes.SECTION_BODY_RESPONSIVE, "space-y-10")}>
         <h1
           class={classNames(
             "text-4xl font-display text-center",

@@ -1,0 +1,85 @@
+# # Test data
+# - company: ABC Inc.
+#   position: Long-term Intern
+#   from: May 2020
+#   to: Present
+#   description: ""
+# - company: Test Corp.
+#   position: Multi-year Intern
+#   from: May 2015
+#   to: Aug 2016
+#   description: ""
+# - company: Small Company Pte. Ltd.
+#   position: Same-year Intern
+#   from: Feb 2014
+#   to: Jul 2014
+#   description: ""
+
+- company: Source Academy
+  link: https://github.com/source-academy
+  position: Robotics Head
+  from: Sep 2022
+  to: Present
+  description: |
+    Created SEKER, a browser-based, backend-less runner for Python/Source programs on the LEGO SPIKE Prime, a MicroPython-based board, complete with Source language bindings for the SPIKE's internal Python API.
+
+    Following the discontinuation of the EV3, SEKER future-proofs the Source Academy robotics curriculum, using an interface that is generalisable to most boards that can run Python. SEKER is already being used in academic activities overseas.
+
+    * Improved security of Source Academy's robotics (EV3) workflow
+    * Modernised part of the frontend to React functional components
+  tech:
+    - Chakra UI
+    - Vite
+    # - WebSerial API
+    - TypeScript
+    - Python
+    - React
+    - Golang
+- company: Source Academy
+  link: https://github.com/source-academy
+  position: Student Software Developer
+  from: Aug 2022
+  to: Dec 2022
+  description: |
+    Developed a live dashboard to display real-time information on various sensors that are connected to remote Lego Mindstorms EV3 devices in Source Academy, a gamified online learning platform for Computer Science freshmen. This greatly enhances the collaborative learning experience for teams, especially for those who are not able to be present in person, benefitting over 800 freshmen yearly.
+  tech:
+    # - WebSocket
+    - GitHub
+    - C
+    - TypeScript
+    - React
+- company: Computing for Voluntary Welfare Organisations
+  link: https://www.comp.nus.edu.sg/~vwo/projects/2022-aac.html
+  position: Full Stack Developer Intern
+  from: May 2022
+  to: Aug 2022
+  description: |
+    Collaborated with 15 other developers to maintain and further develop a Single Page Application for staff of Active Ageing Centres (AACs) serving over 12,000 elderly clients across Singapore, empowering their vision of scaling up to over half a million seniors in the next few years.
+
+    Led a team of 5 to create, design and launch a multi-language, elderly-friendly Progressive Web Application for volunteers of AACs. Built using Ionic Framework and TypeScript-React as frontend, together with Golang and PostgreSQL in the backend, the app unifies and simplifies the workflow that was previously spread across different systems.
+
+    * UI/UX, feature design and development
+    * Bug fixes
+    * Code design
+    * Code quality enhancements (type-safety, scalability, modularity)
+    * Code reviews
+    * Client/stakeholder communications
+  tech:
+    - PostgreSQL
+    - TypeScript
+    - Ionic
+    - GitLab
+    - React
+    - Golang
+- company: Source Academy
+  link: https://github.com/source-academy
+  position: Student Software Developer
+  from: Jan 2022
+  to: May 2022
+  description: |
+    Created a Wi-Fi and QR code-based pairing workflow for linking Source Academy with LEGO Mindstorms EV3 devices, simplifying the out-of-the-box experience for Computer Science freshmen in the gamified online learning platform, enhancing the learning experience of over 800 students taking the introductory programming module every year.
+  tech:
+    - Shell Scripting
+    - C
+    - Linux
+    - Golang
