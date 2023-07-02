@@ -2,7 +2,7 @@
   description: |
     This one has a description.
 
-    In fact, a multiline one. The rendering does not support it yet, though.
+    In fact, a multiline one.
   links:
     - icon: simple-icons:github
       url: https://github.com/

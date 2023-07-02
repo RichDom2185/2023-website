@@ -1,6 +1,7 @@
 import { Icon } from "@iconify-icon/solid";
 import classNames from "classnames";
 import { Component, For } from "solid-js";
+import SolidMarkdown from "solid-markdown";
 import { Project } from "../../types/data";
 import { Classes } from "../../utils/styles";
 import TechnologyIcon from "../common/TechnologyIcon";
@@ -15,7 +16,13 @@ const ProjectDisplay: Component<Project> = ({
   return (
     <div>
       <h4 class={classNames(Classes.TEXT_MEDIUM, "text-xl")}>{name}</h4>
-      {description && <p class="mt-1">{description}</p>}
+      {description && (
+        <SolidMarkdown
+          linkTarget="_blank"
+          class={classNames("mt-1", Classes.MARKDOWN_CONTAINER)}
+          children={description}
+        />
+      )}
       {links?.length && (
         <ul class="mt-3 space-y-1 text-sm">
           <For each={links}>
