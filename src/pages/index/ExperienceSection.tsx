@@ -53,9 +53,11 @@ const ExperienceSection: Component = () => {
               </For>
             </div>
           </div>
+          <Placeholder disableOverlay>
+            Education and other content coming soon!
+          </Placeholder>
         </div>
       </Section>
-      <Placeholder />
     </>
   );
 };
