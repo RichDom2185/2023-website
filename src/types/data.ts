@@ -12,3 +12,13 @@ export type Project = {
   links?: ProjectLink[];
   tech?: Technology[];
 };
+
+export type Experience = {
+  company: string;
+  link?: string;
+  position: string;
+  from: string;
+  to: string;
+  description: string;
+  tech?: Technology[];
+};
