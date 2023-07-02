@@ -15,7 +15,7 @@ const ExperimentsPage: Component = () => {
     <Page withHeader withSidebar>
       <IntroSection />
       <Section>
-        <div class="w-full lg:w-5/6 space-y-10 mx-auto underline-offset-4 dark:tracking-wide">
+        <div class={classNames(Classes.SECTION_BODY_RESPONSIVE, "space-y-10")}>
           <For each={sortedYears}>
             {(year) => (
               <div class="space-y-4">

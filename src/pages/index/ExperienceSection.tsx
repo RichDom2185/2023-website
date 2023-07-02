@@ -11,7 +11,7 @@ const ExperienceSection: Component = () => {
   return (
     <>
       <Section>
-        <div class="w-full lg:w-5/6 space-y-10 mx-auto underline-offset-4 dark:tracking-wide">
+        <div class={classNames(Classes.SECTION_BODY_RESPONSIVE, "space-y-10")}>
           <h1
             class={classNames(
               "text-4xl font-display text-center",
@@ -33,7 +33,7 @@ const ExperienceSection: Component = () => {
         </div>
       </Section>
       <Section>
-        <div class="w-full lg:w-5/6 space-y-20 mx-auto underline-offset-4 dark:tracking-wide">
+        <div class={classNames(Classes.SECTION_BODY_RESPONSIVE, "space-y-20")}>
           <div class="space-y-4">
             <h2
               class={classNames(
