@@ -29,7 +29,7 @@ const ExperimentsPage: Component = () => {
                 </h2>
                 <div
                   class={classNames(
-                    "divide-y divide-stone-800"
+                    "divide-y divide-neutral-300 dark:divide-stone-800"
                     // "px-3 py-3",
                     // "border rounded-lg border-dashed border-stone-500"
                   )}
@@ -39,7 +39,7 @@ const ExperimentsPage: Component = () => {
                       <div
                         class={classNames(
                           "pt-3 pb-4 px-4", // change to px-3 if above border is used
-                          "hover:bg-white hover:bg-opacity-5"
+                          Classes.HOVER_DYNAMIC_BACKGROUND
                         )}
                       >
                         <ProjectDisplay {...project} />

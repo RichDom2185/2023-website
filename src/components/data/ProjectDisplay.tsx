@@ -32,7 +32,7 @@ const ProjectDisplay: Component<Project> = ({
                 >
                   <span
                     class={classNames(
-                      "hover:underline underline-offset-[6px]",
+                      "hover:underline underline-offset-4",
                       "space-x-2"
                     )}
                   >
