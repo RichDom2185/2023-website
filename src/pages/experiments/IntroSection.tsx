@@ -27,9 +27,12 @@ const IntroSection: Component = () => {
           >
             <Placeholder disableOverlay>
               <div class="space-y-6">
-                <p>This section is coming soon!</p>
+                <p>This page is coming soon!</p>
                 <p class="text-sm">
-                  In the meantime, enjoy some test data below:
+                  Congrats, you found a hidden page! This page is not quite
+                  ready yet, as it is missing the main bulk of its content. In
+                  the meantime, as a reward for finding this page, enjoy some
+                  test data below:
                 </p>
               </div>
             </Placeholder>
