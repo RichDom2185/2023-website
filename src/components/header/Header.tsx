@@ -32,7 +32,9 @@ const Header: Component = () => {
         onClick={() => window.open(BLOG_URL, "_blank")}
       />
       {/* <Button label="Apps" onClick={() => alert("apps")} /> */}
-      {/* <Button label="Experiments" onClick={() => alert("experiments")} /> */}
+      {/* <Link href="experiments">
+        <Button label="Experiments" />
+      </Link> */}
       <div class="relative">
         <Button
           label="Resume"

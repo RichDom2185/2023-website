@@ -1,0 +1,23 @@
+- name: Confidential Test Project
+  description: Hence, there are no links.
+  tech:
+    - Python
+    - TypeScript
+    - React
+    - R
+    - Golang
+    - JavaScript
+    - PostgreSQL
+    - Jekyll
+    - Java
+    - TailwindCSS
+
+- name: YATP
+  description: Stands for Yet Another Test Project.
+  links:
+    - icon: simple-icons:gitlab
+      url: https://gitlab.com/
+      label: View the source code on GitLab
+    - icon: simple-icons:render
+      url: https://www.render.com/
+      label: View the deployment on Render

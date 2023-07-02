@@ -3,7 +3,14 @@ import { ParentComponent } from "solid-js";
 import { PLACEHOLDERS_ENABLED } from "../utils/constants";
 import { Classes } from "../utils/styles";
 
-const Placeholder: ParentComponent = ({ children }) => {
+type Props = {
+  disableOverlay?: boolean;
+};
+
+const Placeholder: ParentComponent<Props> = ({
+  disableOverlay = false,
+  children,
+}) => {
   if (!PLACEHOLDERS_ENABLED) {
     return <>{children}</>;
   }
@@ -19,7 +26,7 @@ const Placeholder: ParentComponent = ({ children }) => {
       >
         {children ?? "placeholder content"}
       </span>
-      {children && (
+      {children && !disableOverlay && (
         <div
           class={classNames(
             "absolute top-1 right-1 bottom-1 left-1",

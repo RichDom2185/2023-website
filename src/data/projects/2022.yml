@@ -1,0 +1,22 @@
+- name: Some Test Project
+  description: |
+    This one has a description.
+
+    In fact, a multiline one. The rendering does not support it yet, though.
+  links:
+    - icon: simple-icons:github
+      url: https://github.com/
+      label: View the source code on GitHub
+
+- name: Some Second Test Project
+  tech:
+    - React
+    - TypeScript
+    - TailwindCSS
+  links:
+    - icon: simple-icons:github
+      url: https://github.com/
+      label: View the source code on GitHub
+    - icon: simple-icons:netlify
+      url: https://www.netlify.com/
+      label: View the deployment on Netlify
