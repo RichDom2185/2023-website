@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { Component, For } from "solid-js";
+import SolidMarkdown from "solid-markdown";
 import { Experience } from "../../types/data";
 import { Classes } from "../../utils/styles";
 import TechnologyIcon from "../common/TechnologyIcon";
@@ -23,7 +24,13 @@ const ExperienceDisplay: Component<Experience> = ({
         <p class={classNames("text-sm", "text-stone-600")}>at {company}</p>
       </div>
 
-      {description && <p class="mt-3">{description}</p>}
+      {description && (
+        <SolidMarkdown
+          linkTarget="_blank"
+          class={classNames("mt-3 space-y-1", Classes.MARKDOWN_CONTAINER)}
+          children={description}
+        />
+      )}
       {tech?.length && (
         <div
           class={classNames(

@@ -12,4 +12,9 @@ export const Classes = Object.freeze({
 
   SECTION_BODY_RESPONSIVE:
     "w-full lg:w-5/6 mx-auto underline-offset-4 dark:tracking-wide",
+
+  MARKDOWN_CONTAINER: [
+    "[&>ul_li]:list-disc [&>ul_li]:ml-4",
+    "[&>*_a]:underline [&>*_a]:decoration-dotted [&>*_a]:hover:decoration-solid",
+  ],
 });
