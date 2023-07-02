@@ -1,0 +1,16 @@
+# Test data
+- company: ABC Inc.
+  position: Long-term Intern
+  from: May 2020
+  to: Present
+  description: ""
+- company: Test Corp.
+  position: Multi-year Intern
+  from: May 2015
+  to: Aug 2016
+  description: ""
+- company: Small Company Pte. Ltd.
+  position: Same-year Intern
+  from: Feb 2014
+  to: Jul 2014
+  description: ""
