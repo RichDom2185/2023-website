@@ -2,7 +2,10 @@ import { Icon } from "@iconify-icon/solid";
 import classNames from "classnames";
 import { Component, For } from "solid-js";
 import { Project } from "../../types/data";
-import { technologyToIconMap } from "../../types/general";
+import {
+  technologyToColorClassMap,
+  technologyToIconMap,
+} from "../../types/general";
 import { Classes } from "../../utils/styles";
 import Tooltip from "../common/Tooltip";
 
@@ -64,7 +67,10 @@ const ProjectDisplay: Component<Project> = ({
               >
                 <Icon
                   inline
-                  class="dark:grayscale group-hover:grayscale-0 transition-all"
+                  class={classNames(
+                    "dark:grayscale group-hover:grayscale-0 transition-all",
+                    technologyToColorClassMap[techItem]
+                  )}
                   icon={technologyToIconMap[techItem]}
                 />
                 <Tooltip position="bottom">{techItem}</Tooltip>
