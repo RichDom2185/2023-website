@@ -2,12 +2,8 @@ import { Icon } from "@iconify-icon/solid";
 import classNames from "classnames";
 import { Component, For } from "solid-js";
 import { Project } from "../../types/data";
-import {
-  technologyToColorClassMap,
-  technologyToIconMap,
-} from "../../types/general";
 import { Classes } from "../../utils/styles";
-import Tooltip from "../common/Tooltip";
+import TechnologyIcon from "../common/TechnologyIcon";
 
 // TODO: Investigate why optional props here are never typed as undefined
 const ProjectDisplay: Component<Project> = ({
@@ -59,22 +55,11 @@ const ProjectDisplay: Component<Project> = ({
         >
           <For each={tech}>
             {(techItem) => (
-              <div
-                class={classNames(
-                  "leading-none",
-                  "relative group" // Used for tooltips
-                )}
-              >
-                <Icon
-                  inline
-                  class={classNames(
-                    "dark:grayscale group-hover:grayscale-0 transition-all",
-                    technologyToColorClassMap[techItem]
-                  )}
-                  icon={technologyToIconMap[techItem]}
-                />
-                <Tooltip position="bottom">{techItem}</Tooltip>
-              </div>
+              <TechnologyIcon
+                withTooltip
+                tooltipPosition="bottom"
+                tech={techItem}
+              />
             )}
           </For>
         </div>
