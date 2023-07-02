@@ -24,6 +24,7 @@
     "axios": "^1.4.0",
     "classnames": "^2.3.2",
     "solid-hcaptcha": "^0.2.6",
-    "solid-js": "^1.6.10"
+    "solid-js": "^1.6.10",
+    "solid-markdown": "^1.2.2"
   }
 }
