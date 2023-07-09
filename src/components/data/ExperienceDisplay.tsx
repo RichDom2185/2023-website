@@ -19,20 +19,17 @@ const ExperienceDisplay: Component<Experience> = ({
     companyName
   ) : (
     <a
-      class={classNames("hover:text-blue-600", "dark:hover:text-white")}
       href={link}
       target="_blank"
       rel="noopener noreferrer"
+      class={classNames(
+        "hover:text-blue-600 dark:hover:text-white",
+        // Based on Classes.TEXT_DYNAMIC_COLOR
+        "decoration-zinc-900/30 dark:decoration-stone-400/20",
+        "underline hover:decoration-transparent decoration-dotted underline-offset-4"
+      )}
     >
-      <span
-        class={classNames(
-          // Based on Classes.TEXT_DYNAMIC_COLOR
-          "decoration-zinc-900/30 dark:decoration-stone-400/20",
-          "underline hover:decoration-transparent decoration-dotted underline-offset-4"
-        )}
-      >
-        {companyName}
-      </span>
+      {companyName}
     </a>
   );
 
