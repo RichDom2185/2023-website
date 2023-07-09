@@ -1,6 +1,6 @@
 import { Icon } from "@iconify-icon/solid";
 import classNames from "classnames";
-import { Component, createSignal } from "solid-js";
+import { Component } from "solid-js";
 import Placeholder from "../../components/Placeholder";
 import Section from "../../components/ui/Section";
 import { workExperiences } from "../../data/experience";
@@ -9,8 +9,6 @@ import ExperienceList from "./ExperienceList";
 import ExperienceShowcase from "./ExperienceShowcase";
 
 const ExperienceSection: Component = () => {
-  const [getSelectedIndex, setSelectedIndex] = createSignal(0);
-
   return (
     <>
       <Section>
@@ -44,8 +42,7 @@ const ExperienceSection: Component = () => {
             <ExperienceShowcase
               category="Work"
               items={workExperiences}
-              currentIndex={getSelectedIndex}
-              onIndexChange={(i) => setSelectedIndex(i)}
+              initialIndex={0}
             />
           </div>
           <Placeholder disableOverlay>

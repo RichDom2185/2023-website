@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { Component, For, createMemo } from "solid-js";
+import { Component, For, createMemo, createSignal } from "solid-js";
 import ExperienceDisplay from "../../components/data/ExperienceDisplay";
 import ExperienceSummary from "../../components/data/ExperienceSummary";
 import { workExperiences } from "../../data/experience";
@@ -9,21 +9,20 @@ import { Classes } from "../../utils/styles";
 type Props = {
   category: string;
   items: Experience[];
-  currentIndex: () => number;
-  onIndexChange: (newIndex: number) => void;
+  initialIndex?: number;
 };
 
 const ExperienceShowcase: Component<Props> = ({
   category,
   items,
-  currentIndex,
-  onIndexChange,
+  initialIndex = 0,
 }) => {
+  const [getSelectedIndex, setSelectedIndex] = createSignal(initialIndex);
   const getCurrentDescription = createMemo(() => {
     // If we destructure without first assigning to the `props`
     // variable, we lose reactivity. For more info, see:
     // https://github.com/solidjs/solid/discussions/287
-    const props = workExperiences[currentIndex()];
+    const props = workExperiences[getSelectedIndex()];
     return <ExperienceDisplay {...props} />;
   });
 
@@ -51,9 +50,9 @@ const ExperienceShowcase: Component<Props> = ({
                     // Adapted from Classes.HOVER_DYNAMIC_BACKGROUND,
                     // TODO: Match the colors to the description
                     "hover:bg-black/10 dark:hover:bg-white/10",
-                    currentIndex() === i() && "bg-black/5 dark:bg-white/5"
+                    getSelectedIndex() === i() && "bg-black/5 dark:bg-white/5"
                   )}
-                  onClick={() => onIndexChange(i())}
+                  onClick={() => setSelectedIndex(i())}
                 >
                   <ExperienceSummary {...experience} />
                 </div>
