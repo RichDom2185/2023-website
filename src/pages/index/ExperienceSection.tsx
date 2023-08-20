@@ -3,13 +3,16 @@ import classNames from "classnames";
 import { Component, For } from "solid-js";
 import Placeholder from "../../components/Placeholder";
 import Section from "../../components/ui/Section";
-import { workExperiences } from "../../data/experience";
+import { educationExperiences, workExperiences } from "../../data/experience";
 import { Classes } from "../../utils/styles";
 import ExperienceList from "./ExperienceList";
 import ExperienceShowcase from "./ExperienceShowcase";
 
 // TODO: Add more categories
-const categories = [["Work", workExperiences]] as const;
+const categories = [
+  ["Work", workExperiences],
+  ["Education", educationExperiences],
+] as const;
 
 const ExperienceSection: Component = () => {
   return (
@@ -57,9 +60,7 @@ const ExperienceSection: Component = () => {
               </>
             )}
           </For>
-          <Placeholder disableOverlay>
-            Education and other content coming soon!
-          </Placeholder>
+          <Placeholder disableOverlay>Other content coming soon!</Placeholder>
         </div>
       </Section>
     </>
