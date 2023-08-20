@@ -2,7 +2,6 @@ import classNames from "classnames";
 import { Component, For, createMemo, createSignal } from "solid-js";
 import ExperienceDisplay from "../../components/data/ExperienceDisplay";
 import ExperienceSummary from "../../components/data/ExperienceSummary";
-import { workExperiences } from "../../data/experience";
 import { Experience } from "../../types/data";
 import { Classes } from "../../utils/styles";
 
@@ -22,7 +21,7 @@ const ExperienceShowcase: Component<Props> = ({
     // If we destructure without first assigning to the `props`
     // variable, we lose reactivity. For more info, see:
     // https://github.com/solidjs/solid/discussions/287
-    const props = workExperiences[getSelectedIndex()];
+    const props = items[getSelectedIndex()];
     return <ExperienceDisplay {...props} />;
   });
 
