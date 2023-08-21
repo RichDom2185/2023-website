@@ -1,6 +1,6 @@
 import { Icon } from "@iconify-icon/solid";
 import classNames from "classnames";
-import { Component, createMemo, createSignal } from "solid-js";
+import { Component, ComponentProps, createMemo, createSignal } from "solid-js";
 
 type Props = {
   label: string | (() => string);
@@ -8,6 +8,7 @@ type Props = {
   getEnabledState?: () => boolean;
   leftIcon?: string;
   rightIcon?: string;
+  buttonProps?: ComponentProps<"button">;
 };
 
 // TODO: Investigate why optional props here are never typed as undefined
@@ -17,6 +18,7 @@ const Button: Component<Props> = ({
   getEnabledState,
   leftIcon,
   rightIcon,
+  buttonProps = {},
 }) => {
   // Override default hover styles when useEnabledState is true
   const [useEnabledState, setUseEnabledState] = createSignal(false);
@@ -25,6 +27,7 @@ const Button: Component<Props> = ({
 
   return (
     <button
+      {...buttonProps}
       classList={{
         [classNames(
           "!text-stone-900 dark:!text-stone-200",
