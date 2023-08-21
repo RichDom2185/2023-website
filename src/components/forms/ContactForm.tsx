@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { Component, createSignal } from "solid-js";
+import { postMessage } from "../../api/contact";
 import { Classes } from "../../utils/styles";
 import Button from "../common/Button";
 
@@ -25,9 +26,24 @@ const ContactForm: Component = () => {
   const shouldWarn = () =>
     !getEmailValue() && !getTelegramValue() && getMessageValue();
 
+  const handleSubmit = () => {
+    // TODO: Investigate weird type inference
+    const email: string | undefined = getEmailValue() || undefined;
+    const telegram: string | undefined = getTelegramValue() || undefined;
+
+    const message = getMessageValue();
+    // TODO: Investigate weird typing (missing undefined)
+    postMessage(email, telegram, message);
+  };
+
   return (
     <div class="w-full lg:w-2/3 mx-auto">
-      <form action="">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSubmit();
+        }}
+      >
         <div
           class={classNames(
             "flex flex-col gap-y-4",
@@ -156,7 +172,7 @@ const ContactForm: Component = () => {
                   ? "I have checked my message, proceed to send"
                   : "Send Message"
               }
-              onClick={() => alert("Coming soon!")}
+              buttonProps={{ type: "submit" }}
             />
           </div>
         </div>
