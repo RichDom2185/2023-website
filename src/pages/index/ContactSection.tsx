@@ -1,7 +1,6 @@
 import { Icon } from "@iconify-icon/solid";
 import classNames from "classnames";
 import { Component } from "solid-js";
-import Placeholder from "../../components/Placeholder";
 import ContactForm from "../../components/forms/ContactForm";
 import Section from "../../components/ui/Section";
 import { Classes } from "../../utils/styles";
@@ -32,9 +31,7 @@ const ContactSection: Component = () => {
             socials, or send me an instant message below!
           </p>
         </div>
-        <Placeholder>
-          <ContactForm />
-        </Placeholder>
+        <ContactForm />
       </div>
     </Section>
   );
