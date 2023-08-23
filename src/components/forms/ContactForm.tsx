@@ -33,7 +33,13 @@ const ContactForm: Component = () => {
 
     const message = getMessageValue();
     // TODO: Investigate weird typing (missing undefined)
-    postMessage(email, telegram, message);
+    postMessage(email, telegram, message)
+      .then(() => {
+        alert("Your message has been sent!");
+      })
+      .catch(() => {
+        alert("Something went wrong, please try again later.");
+      });
   };
 
   return (
