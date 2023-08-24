@@ -3,7 +3,6 @@ import { Component, createSignal } from "solid-js";
 import { getResume } from "../../api/resume";
 import { BLOG_URL } from "../../utils/constants";
 import { Classes } from "../../utils/styles";
-import Placeholder from "../Placeholder";
 import Captcha from "../captcha/Captcha";
 import Button from "../common/Button";
 
@@ -59,16 +58,14 @@ const Header: Component = () => {
             <p class="font-sans">
               To access my resume, please verify that you are not a bot:
             </p>
-            <Placeholder>
-              <Captcha
-                handleVerify={async (token) => {
-                  const pdf = await getResume(token);
-                  const url = window.URL.createObjectURL(pdf);
-                  window.open(url, "_blank");
-                  toggleIsCaptchaVisible();
-                }}
-              />
-            </Placeholder>
+            <Captcha
+              handleVerify={async (token) => {
+                const pdf = await getResume(token);
+                const url = window.URL.createObjectURL(pdf);
+                window.open(url, "_blank");
+                toggleIsCaptchaVisible();
+              }}
+            />
           </div>
         )}
       </div>
