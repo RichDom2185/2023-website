@@ -3,6 +3,7 @@ import { ParentComponent } from "solid-js";
 
 type Props = {
   position: "top" | "bottom" | "left" | "right";
+  mode?: "group" | "peer";
 };
 
 // Credit to https://stackoverflow.com/a/23384995
@@ -17,7 +18,11 @@ const positionClasses = {
   [key in Props["position"]]: classNames.Argument;
 };
 
-const Tooltip: ParentComponent<Props> = ({ position, children }) => {
+const Tooltip: ParentComponent<Props> = ({
+  position,
+  mode = "group",
+  children,
+}) => {
   return (
     <span
       class={classNames(
@@ -36,7 +41,8 @@ const Tooltip: ParentComponent<Props> = ({ position, children }) => {
         positionClasses[position],
         // Tooltip visibility
         "invisible opacity-0 transition-opacity duration-50",
-        "group-hover:opacity-100 group-hover:visible"
+        mode === "group" && "group-hover:opacity-100 group-hover:visible",
+        mode === "peer" && "peer-hover:opacity-100 peer-hover:visible"
       )}
     >
       {children}
