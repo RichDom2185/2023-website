@@ -8,6 +8,7 @@ import {
   SOCIAL_LINKEDIN_URL,
 } from "../../utils/constants";
 import { Classes } from "../../utils/styles";
+import Logo from "./Logo";
 import SocialLink from "./SocialLink";
 
 const Sidebar: Component = () => {
@@ -20,22 +21,7 @@ const Sidebar: Component = () => {
         "bg-white dark:bg-zinc-800"
       )}
     >
-      <div class="text-center">
-        <a
-          href="/"
-          class={classNames(
-            "text-stone-500 hover:text-black",
-            "dark:text-stone-400 dark:hover:text-stone-300",
-
-            "select-none",
-            "inline-block w-[2.0625rem] md:w-[2.5rem]",
-            "font-normal hover:font-black",
-            "transition-[color,font-weight]"
-          )}
-        >
-          RD
-        </a>
-      </div>
+      <Logo />
       <div
         class={classNames(
           "flex flex-col gap-y-2 md:gap-y-3 items-center",
