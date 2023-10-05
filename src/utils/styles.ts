@@ -15,8 +15,8 @@ export const Classes = Object.freeze({
 
   MARKDOWN_CONTAINER: [
     "[&>ul_li]:list-disc [&>ul_li]:ml-4",
-    "[&>*_a]:underline [&>*_a]:decoration-dotted [&>*_a]:hover:decoration-solid",
-    "[&>*_a]:hover:text-blue-600 [&>*_a]:dark:hover:text-blue-300",
+    "[&>*_a]:underline [&>*_a]:decoration-dotted [&>*_a:hover]:hover:decoration-solid",
+    "[&>*_a:hover]:text-blue-600 [&>*_a:hover]:dark:text-blue-300",
   ],
 
   HOVER_DYNAMIC_BACKGROUND: "hover:bg-black/5 dark:hover:bg-white/5",
