@@ -17,6 +17,50 @@
 
 - company: Source Academy
   link: https://github.com/source-academy
+  position: Chief Technology Officer
+  from: May 2023
+  to: Present
+  description: |
+    I am the current Chief Technology Officer and Lead Developer of [Source Academy](https://sourceacademy.org/contributors).
+
+    * Managed 5 teams working on parallel greenfield, brownfield projects focusing on a smooth and conflict-free development with minimal bugs and downtime
+    * Migrating to a containerised Docker architecture to enhance deployment flexibility and developer experience
+    * Adding SAML SSO-based support in addition to OAuth2 authentication
+    * Designed and created a new Golang API to power [Source Academy Stories](https://github.com/source-academy/stories-backend), a Jupyter Notebook-style technical blogging platform
+    * Refactoring the React frontend to support multiple different programming languages, improving flexibility and marketability for other kinds of programming courses
+    * Integrating Large Language Models into the stack (AWS Lambda, Elixir backend)
+  tech:
+    - React
+    - TypeScript
+    - Docker
+    - Amazon Web Services
+    - Elixir
+    - AWS Lightsail
+    - JavaScript
+    - GitHub
+    - Golang
+    - PostgreSQL
+- company: National University of Singapore
+  link: https://nus.edu.sg
+  position: Undergraduate Teaching Assistant
+  from: Jan 2023
+  to: Present
+  description: |
+    Courses taught:
+
+    * TIC2002 Introduction to Software Engineering
+
+      Helped students learn and apply Software Engineering and Object-Oriented Principles in small-scale projects.
+
+      ### **Semesters Taught**:
+
+      * [AY 2022/2023 Semester 2](https://nus-tic2002-ay2223s2.github.io/website/admin/#tutors)
+      * [AY 2023/2024 Semester 1](https://nus-tic2002-ay2324s1.github.io/website/admin/#tutors)
+  tech:
+    - Java
+    - GitHub
+- company: Source Academy
+  link: https://github.com/source-academy
   position: Robotics Head
   from: Sep 2022
   to: Present
