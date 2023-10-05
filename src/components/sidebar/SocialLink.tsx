@@ -10,12 +10,13 @@ import ExternalLink from "../common/ExternalLink";
 type Props = {
   type: Social;
   to: string;
+  inline?: boolean;
 };
 
-const SocialLink: Component<Props> = ({ type, to }) => {
+const SocialLink: Component<Props> = ({ type, to, inline = false }) => {
   return (
     <ExternalLink to={to} hoverClass={socialToColorClassMap[type]}>
-      <Icon icon={socialToIconMap[type]} />
+      <Icon inline={inline} icon={socialToIconMap[type]} />
     </ExternalLink>
   );
 };
