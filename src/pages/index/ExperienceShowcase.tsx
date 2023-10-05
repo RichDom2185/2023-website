@@ -9,12 +9,14 @@ type Props = {
   category: string;
   items: Experience[];
   initialIndex?: number;
+  flipped?: boolean;
 };
 
 const ExperienceShowcase: Component<Props> = ({
   category,
   items,
   initialIndex = 0,
+  flipped = false,
 }) => {
   const [getSelectedIndex, setSelectedIndex] = createSignal(initialIndex);
   const getCurrentDescription = createMemo(() => {
@@ -26,7 +28,12 @@ const ExperienceShowcase: Component<Props> = ({
   });
 
   return (
-    <div class="flex gap-x-8 justify-between">
+    <div
+      class={classNames(
+        "flex gap-x-8 justify-between",
+        flipped && "flex-row-reverse"
+      )}
+    >
       <div class="w-[100%]">
         <div class="space-y-4">
           <h2
