@@ -21,6 +21,10 @@ export enum Technology {
   C = "C",
   LINUX = "Linux",
   SHELL = "Shell Scripting",
+  AWS = "Amazon Web Services",
+  LIGHTSAIL = "AWS Lightsail",
+  ELIXIR = "Elixir",
+  DOCKER = "Docker",
 }
 
 export const technologyToIconMap = Object.freeze({
@@ -42,6 +46,10 @@ export const technologyToIconMap = Object.freeze({
   [Technology.C]: "devicon:c",
   [Technology.LINUX]: "devicon:linux",
   [Technology.SHELL]: "devicon:bash",
+  [Technology.AWS]: "devicon:amazonwebservices-wordmark",
+  [Technology.LIGHTSAIL]: "logos:aws-lightsail",
+  [Technology.ELIXIR]: "devicon:elixir",
+  [Technology.DOCKER]: "logos:docker-icon",
 }) satisfies { [key in Technology]: string };
 
 export const technologyToColorClassMap = Object.freeze({
@@ -60,5 +68,21 @@ export const technologyToColorClassMap = Object.freeze({
     "before:right-[3px]",
     "before:left-[3px]",
     "before:bottom-[2px]"
+  ),
+  [Technology.AWS]: classNames(
+    "dark:invert",
+    "dark:hover:invert-0",
+
+    "dark:hover:before:bg-[#F5F5F5]/80",
+
+    "dark:before:rounded-full",
+    "dark:before:-z-10",
+    "dark:before:blur-sm",
+
+    "before:absolute",
+    "before:-top-[3px]",
+    "before:-right-[4px]",
+    "before:-left-[4px]",
+    "before:-bottom-[3px]"
   ),
 }) satisfies { [key in Technology]?: string };
