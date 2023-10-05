@@ -11,14 +11,19 @@ import { Classes } from "../../utils/styles";
 import Logo from "./Logo";
 import SocialLink from "./SocialLink";
 
-const Sidebar: Component = () => {
+type Props = {
+  hideOnMobile?: boolean;
+};
+
+const Sidebar: Component<Props> = ({ hideOnMobile = false }) => {
   return (
     <div
       class={classNames(
-        "h-screen sticky top-0 flex flex-col justify-between",
+        "h-screen sticky top-0 flex-col justify-between",
         "text-2xl md:text-3xl",
         "leading-none px-3 py-4 md:px-5 md:py-6",
-        "bg-white dark:bg-zinc-800"
+        "bg-white dark:bg-zinc-800",
+        hideOnMobile ? "hidden sm:flex" : "flex"
       )}
     >
       <Logo />
