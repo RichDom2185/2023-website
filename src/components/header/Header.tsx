@@ -1,10 +1,19 @@
 import classNames from "classnames";
 import { Component, createSignal } from "solid-js";
 import { getResume } from "../../api/resume";
-import { BLOG_URL } from "../../utils/constants";
+import { Social } from "../../types/social";
+import {
+  BLOG_URL,
+  SOCIAL_EMAIL_URL,
+  SOCIAL_GITHUB_URL,
+  SOCIAL_GITLAB_URL,
+  SOCIAL_LINKEDIN_URL,
+} from "../../utils/constants";
 import { Classes } from "../../utils/styles";
 import Captcha from "../captcha/Captcha";
 import Button from "../common/Button";
+import Logo from "../sidebar/Logo";
+import SocialLink from "../sidebar/SocialLink";
 
 const Header: Component = () => {
   const [isCaptchaVisible, setIsCaptchaVisible] = createSignal(false);
@@ -19,11 +28,16 @@ const Header: Component = () => {
         "bg-opacity-70 dark:bg-opacity-50",
         "backdrop-blur",
         "sticky top-0 w-full h-[--header-height]",
-        "flex gap-x-6 items-center",
+        "flex items-center",
+        "gap-x-3 md:gap-x-5 lg:gap-x-6",
         "py-4 px-5 text-sm font-display justify-end",
         Classes.TEXT_MEDIUM
       )}
     >
+      <div class="text-xl grow flex sm:hidden">
+        {/* TODO: Remove coupling between Header and Sidebar social links */}
+        <Logo />
+      </div>
       {/* TODO: Enable the following buttons when ready */}
       <Button
         label="Blog"
@@ -68,6 +82,20 @@ const Header: Component = () => {
             />
           </div>
         )}
+      </div>
+      <div
+        class={classNames(
+          "sm:hidden text-xl space-x-2",
+          // FIXME: Hacky divider implementation
+          "pl-4 border-l border-solid",
+          "border-zinc-900/50 dark:border-stone-400/60"
+        )}
+      >
+        {/* TODO: Remove coupling between Header and Sidebar social links */}
+        <SocialLink inline type={Social.GITHUB} to={SOCIAL_GITHUB_URL} />
+        <SocialLink inline type={Social.GITLAB} to={SOCIAL_GITLAB_URL} />
+        <SocialLink inline type={Social.LINKEDIN} to={SOCIAL_LINKEDIN_URL} />
+        <SocialLink inline type={Social.EMAIL} to={SOCIAL_EMAIL_URL} />
       </div>
     </header>
   );
