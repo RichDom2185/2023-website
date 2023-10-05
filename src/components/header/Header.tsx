@@ -29,8 +29,9 @@ const Header: Component = () => {
         "backdrop-blur",
         "sticky top-0 w-full h-[--header-height]",
         "flex items-center",
-        "gap-x-3 md:gap-x-5 lg:gap-x-6",
-        "py-4 px-5 text-sm font-display justify-end",
+        "gap-x-1 md:gap-x-5 lg:gap-x-6",
+        "px-3 md:px-5",
+        "py-4 text-sm font-display justify-end",
         Classes.TEXT_MEDIUM
       )}
     >
@@ -85,7 +86,7 @@ const Header: Component = () => {
       </div>
       <div
         class={classNames(
-          "sm:hidden text-xl space-x-2",
+          "sm:hidden text-lg space-x-2",
           // FIXME: Hacky divider implementation
           "pl-4 border-l border-solid",
           "border-zinc-900/50 dark:border-stone-400/60"
