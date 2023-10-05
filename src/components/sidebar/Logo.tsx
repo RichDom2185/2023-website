@@ -5,7 +5,7 @@ const Logo: Component = () => {
   return (
     <div class="text-center">
       <a
-        href="/"
+        href="/#"
         class={classNames(
           "text-stone-500 hover:text-black",
           "dark:text-stone-400 dark:hover:text-stone-300",
