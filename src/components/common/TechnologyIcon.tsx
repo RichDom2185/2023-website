@@ -20,21 +20,21 @@ const TechnologyIcon: Component<Props> = ({
   tooltipPosition = "bottom",
 }) => {
   return (
-    <div
-      class={classNames(
-        "leading-none",
-        "relative group" // Used for tooltips
-      )}
-    >
+    <div class="leading-none relative">
       <Icon
         inline
         class={classNames(
-          "dark:grayscale group-hover:grayscale-0 transition-all",
+          "dark:grayscale hover:grayscale-0 transition-all",
+          "peer", // Used for tooltips
           technologyToColorClassMap[tech]
         )}
         icon={technologyToIconMap[tech]}
       />
-      {withTooltip && <Tooltip position={tooltipPosition}>{tech}</Tooltip>}
+      {withTooltip && (
+        <Tooltip mode="peer" position={tooltipPosition}>
+          {tech}
+        </Tooltip>
+      )}
     </div>
   );
 };
