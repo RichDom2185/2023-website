@@ -1802,10 +1802,10 @@ semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-seroval@^0.10.4:
-  version "0.10.4"
-  resolved "https://registry.yarnpkg.com/seroval/-/seroval-0.10.4.tgz#7c47761d7651b2471bcdb44906213df4114bb1d0"
-  integrity sha512-TdaE9JkoATjKu+vjwllieX8zWyBTUVxbgWDnOsDJFfmKbM7vLSukuCXuD3pO3kkCtX4daywOW8ps2VCdPhS8/w==
+seroval@^0.11.6:
+  version "0.11.6"
+  resolved "https://registry.yarnpkg.com/seroval/-/seroval-0.11.6.tgz#ec5ef38a7ac34cac116f6028d505c163c3767973"
+  integrity sha512-Lhy+94CNcNza6d0vM4sQKLsaLaX39q0ELqIBc7DkdiFljI8Q387Yb+xKgLxRWXs7uuHRu/ZcJ64xfVJ0Bj4LPg==
 
 seroval@^0.5.0:
   version "0.5.1"
@@ -1821,12 +1821,12 @@ solid-hcaptcha@^0.3.0:
     "@solid-primitives/script-loader" "^2.0.2"
 
 solid-js@^1.6.10:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.1.tgz#0568041f6dfca099ae48b94b2de1711974d25694"
-  integrity sha512-HU4tB/vWY5/0P9GzbvePjK1aucNqUcF1XlAirZBjKkrkWG8XNIN9HSjscTC/nbl3A6JWjrW+OLcPEvWxsMhdng==
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.3.tgz#cf0776b330ec136d4a5885a7459094ad40047c3a"
+  integrity sha512-S7ztgPI6X4tUaWmhZe3aDx0E9F6FGxXVU8NsocrPqqUbxHoFi8eTPlDMcenOlXuo2ITQ97j2URaj0StfJci4KQ==
   dependencies:
     csstype "^3.1.0"
-    seroval "^0.10.4"
+    seroval "^0.11.6"
 
 solid-js@^1.7.3:
   version "1.7.7"
