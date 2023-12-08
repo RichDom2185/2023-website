@@ -19,4 +19,4 @@ export const REPOSITORY_URL: string =
 export const BLOG_URL: string = import.meta.env.VITE_BLOG_URL ?? "";
 
 export const PLACEHOLDERS_ENABLED: boolean =
-  import.meta.env.VITE_PLACEHOLDERS_ENABLED === "true" ?? false;
+  import.meta.env.VITE_PLACEHOLDERS_ENABLED === "true" || false;
