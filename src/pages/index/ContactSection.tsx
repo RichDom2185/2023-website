@@ -10,7 +10,9 @@ const ContactSection: Component = () => {
     <Section>
       <div class={classNames(Classes.SECTION_BODY_RESPONSIVE, "space-y-10")}>
         <h1
+          id="contact"
           class={classNames(
+            "scroll-mt-[--header-height]",
             "text-4xl font-display text-center",
             Classes.TEXT_BOLD
           )}

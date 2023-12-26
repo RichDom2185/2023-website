@@ -24,7 +24,9 @@ const AboutSection: Component = () => {
     <Section>
       <div class={classNames(Classes.SECTION_BODY_RESPONSIVE, "space-y-10")}>
         <h1
+          id="about"
           class={classNames(
+            "scroll-mt-[--header-height]",
             "text-4xl font-display text-center",
             Classes.TEXT_BOLD
           )}
