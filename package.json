@@ -20,7 +20,7 @@
     "yaml": "^2.3.1"
   },
   "dependencies": {
-    "@solidjs/router": "^0.8.2",
+    "@solidjs/router": "^0.10.0",
     "axios": "^1.4.0",
     "classnames": "^2.3.2",
     "solid-hcaptcha": "^0.3.0",
