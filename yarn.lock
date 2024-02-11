@@ -1923,9 +1923,9 @@ solid-hcaptcha@^0.3.0:
     "@solid-primitives/script-loader" "^2.0.2"
 
 solid-js@^1.6.10:
-  version "1.8.12"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.12.tgz#12903f076cdbd74e13dd6ab47b1006c3a07f5591"
-  integrity sha512-sLE/i6M9FSWlov3a2pTC5ISzanH2aKwqXTZj+bbFt4SUrVb4iGEa7fpILBMOxsQjkv3eXqEk6JVLlogOdTe0UQ==
+  version "1.8.14"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.14.tgz#979aa8000eedede07e7f5a5773a4714ab3eeb113"
+  integrity sha512-kDfgHBm+ROVLDVuqaXh/jYz0ZVJ29TYfVsKsgDPtNcjoyaPtOvDX2l0tVnthjLdEXr7vDTYeqEYFfMkZakDsOQ==
   dependencies:
     csstype "^3.1.0"
     seroval "^1.0.3"
