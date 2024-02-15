@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { Component, For } from "solid-js";
-import SolidMarkdown from "solid-markdown";
+import { SolidMarkdown } from "solid-markdown";
 import { Experience } from "../../types/data";
 import { Classes } from "../../utils/styles";
 import TechnologyIcon from "../common/TechnologyIcon";
