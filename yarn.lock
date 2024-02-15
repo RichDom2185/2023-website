@@ -535,7 +535,7 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.5.tgz#a6ce3e556e00fd9895dd872dd172ad0d4bd687f4"
   integrity sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==
 
-"@types/hast@^2.0.0", "@types/hast@^2.3.4":
+"@types/hast@^2.0.0":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@types/hast/-/hast-2.3.4.tgz#8aa5ef92c117d20d974a82bdfb6a648b08c0bafc"
   integrity sha512-wLEm0QvaoawEDoTRwzTXp4b4jpwiJDvR5KMnFnVodm3scufTlBOWRD6N1OBf9TZMhjlNsSfcO5V+7AF4+Vy+9g==
@@ -554,12 +554,7 @@
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-0.7.31.tgz#31b7ca6407128a3d2bbc27fe2d21b345397f6197"
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
-"@types/prop-types@^15.7.5":
-  version "15.7.5"
-  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
-  integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
-
-"@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.6":
+"@types/unist@*", "@types/unist@^2.0.0":
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
   integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
@@ -1769,10 +1764,10 @@ postcss@^8.4.21, postcss@^8.4.23, postcss@^8.4.35:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-property-information@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/property-information/-/property-information-6.2.0.tgz#b74f522c31c097b5149e3c3cb8d7f3defd986a1d"
-  integrity sha512-kma4U7AFCTwpqq5twzC1YVIDXSqg6qQK6JN0smOw8fgRy1OkMi0CYSzFmsy6dnqSenamAtj0CyXMUJ1Mf6oROg==
+property-information@^6.3.0:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/property-information/-/property-information-6.4.1.tgz#de8b79a7415fd2107dfbe65758bb2cc9dfcf60ac"
+  integrity sha512-OHYtXfu5aI2sS2LWFSN5rgJjrQ4pCy8i1jubJLe2QvMF8JJ++HXTUIVWFLfXJoaOfvYYjk2SN8J2wFUWIGXT4w==
 
 proxy-from-env@^1.1.0:
   version "1.1.0"
@@ -1808,7 +1803,7 @@ remark-gfm@^3.0.1:
     micromark-extension-gfm "^2.0.0"
     unified "^10.0.0"
 
-remark-parse@^10.0.1:
+remark-parse@^10.0.2:
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-10.0.2.tgz#ca241fde8751c2158933f031a4e3efbaeb8bc262"
   integrity sha512-3ydxgHa/ZQzG8LvC7jTXccARYDcRld3VfcgIIFs7bI6vbRSxJJmzgLEIIoYKyrfhaY+ujuWaf/PJiMZXoiCXgw==
@@ -1917,7 +1912,7 @@ solid-hcaptcha@^0.4.0:
     "@hcaptcha/types" "^1.0.3"
     "@solid-primitives/script-loader" "^2.0.2"
 
-solid-js@^1.6.10, solid-js@^1.7.3:
+solid-js@^1.6.10:
   version "1.8.15"
   resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.15.tgz#af4eef7203203efefb605613f3c244b5bcdb63bc"
   integrity sha512-d0QP/efr3UVcwGgWVPveQQ0IHOH6iU7yUhc2piy8arNG8wxKmvUy1kFxyF8owpmfCWGB87usDKMaVnsNYZm+Vw==
@@ -1926,22 +1921,18 @@ solid-js@^1.6.10, solid-js@^1.7.3:
     seroval "^1.0.3"
     seroval-plugins "^1.0.3"
 
-solid-markdown@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/solid-markdown/-/solid-markdown-1.2.2.tgz#da2c8849ffc45ab43de2ec25e59807ab60789e0d"
-  integrity sha512-ohRnAgGqMyUCsiDx0uHWpo++6+2YEKnGwYBIR0ioJV0p601s5Ln0fOBXxBYN3DbgFiD/IDwgv4l9hMPxtUwoXA==
+solid-markdown@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/solid-markdown/-/solid-markdown-2.0.0.tgz#ac00c5788ddc147ad8afb752b1e9cc6ab889efbd"
+  integrity sha512-TttuvRaAuvHNIOZ2Weqfi4C16SAE5QaWA4qLwZY8Ad/g7gQyE3aUenXK4sgy9spM/uumz150JIc2oxDGiNLfEw==
   dependencies:
-    "@types/hast" "^2.3.4"
-    "@types/prop-types" "^15.7.5"
-    "@types/unist" "^2.0.6"
     comma-separated-tokens "^2.0.3"
-    property-information "^6.2.0"
+    property-information "^6.3.0"
     remark-gfm "^3.0.1"
-    remark-parse "^10.0.1"
+    remark-parse "^10.0.2"
     remark-rehype "^10.1.0"
-    solid-js "^1.7.3"
     space-separated-tokens "^2.0.2"
-    style-to-object "^0.4.1"
+    style-to-object "^0.3.0"
     unified "^10.1.2"
     unist-util-visit "^4.1.2"
     vfile "^5.3.7"
@@ -1999,10 +1990,10 @@ strip-ansi@^7.0.1:
   dependencies:
     ansi-regex "^6.0.1"
 
-style-to-object@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-0.4.1.tgz#53cf856f7cf7f172d72939d9679556469ba5de37"
-  integrity sha512-HFpbb5gr2ypci7Qw+IOhnP2zOU7e77b+rzM+wTzXzfi1PrtBCX0E7Pk4wL4iTLnhzZ+JgEGAhX81ebTg/aYjQw==
+style-to-object@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-0.3.0.tgz#b1b790d205991cc783801967214979ee19a76e46"
+  integrity sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==
   dependencies:
     inline-style-parser "0.1.1"
 
