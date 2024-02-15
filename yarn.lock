@@ -1909,10 +1909,10 @@ signal-exit@^4.0.1:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
 
-solid-hcaptcha@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/solid-hcaptcha/-/solid-hcaptcha-0.3.0.tgz#fccd5601df96b4ea74ba6c9e7b3a6deaee5deac4"
-  integrity sha512-OnkCAFoYkGg/qXzPZmp6DnZSFaEmML1DepBo9z5hrSmIC9O8po1NB6oXFsvzZtmt6zi3/b7G+/W5Z6obv6zJ6A==
+solid-hcaptcha@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/solid-hcaptcha/-/solid-hcaptcha-0.4.0.tgz#401e0f2c8b9624c0818a2a2eabb83d89665d8a58"
+  integrity sha512-ermYlhU09wPxqNZujVJr6NQI0T/25Ru8rN9a3gGjB83vqpQTapzP3HujmRBDGTF0Ghuy6r0xexhDnOYVTPrxhw==
   dependencies:
     "@hcaptcha/types" "^1.0.3"
     "@solid-primitives/script-loader" "^2.0.2"
