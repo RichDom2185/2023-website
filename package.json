@@ -22,11 +22,11 @@
     "yaml": "^2.3.1"
   },
   "dependencies": {
-    "@solidjs/router": "^0.8.2",
+    "@solidjs/router": "^0.12.5",
     "axios": "^1.4.0",
     "classnames": "^2.3.2",
     "solid-hcaptcha": "^0.4.0",
-    "solid-js": "^1.6.10",
+    "solid-js": "^1.8.15",
     "solid-markdown": "^2.0.0"
   }
 }

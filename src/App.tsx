@@ -1,4 +1,4 @@
-import { Route, Routes } from "@solidjs/router";
+import { Route, Router } from "@solidjs/router";
 import type { Component } from "solid-js";
 import { sendHello } from "./api/hello";
 import ExperimentsPage from "./pages/experiments";
@@ -9,10 +9,10 @@ const App: Component = () => {
   // for other incoming requests.
   sendHello();
   return (
-    <Routes>
+    <Router>
       <Route path="/" component={IndexPage} />
       <Route path="/experiments" component={ExperimentsPage} />
-    </Routes>
+    </Router>
   );
 };
 
