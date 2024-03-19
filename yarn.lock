@@ -485,10 +485,10 @@
   resolved "https://registry.yarnpkg.com/@solid-primitives/script-loader/-/script-loader-2.0.2.tgz#d4be5149d4b66d2b001169519e2d4847079e2cba"
   integrity sha512-TZmUMpWcSpAzBFG46rIWXEQhiF+K1VvQBWsvtOoT3FRwBT64NDUCvjsXdR+0DWErWqZHXI1SXElnMphAu5xeCg==
 
-"@solidjs/router@^0.12.5":
-  version "0.12.5"
-  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.12.5.tgz#dfaeea494d4abf54da844a633e42ba4a3ee24f8a"
-  integrity sha512-UK9GnWPS1RmBf7w35DpWwqNgpVbKhon5eXOl7Xk+edPMTzzHkwPW2RytQKQ0BMRQOHzyM/WRetWLbIAubKdlog==
+"@solidjs/router@^0.13.0":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.13.1.tgz#91894f1f3d2458fd5dfeb2ca80898b8d4de13cb4"
+  integrity sha512-Rz5Lf0ssWMuN+Wm2GFO0vwZoO/KSwYFSuCUzWrRAvje5M0ZYZrMk5FZxuzdJT+zg8KuqWJQlRALks5E0r+FjAA==
 
 "@types/babel__core@^7.20.4":
   version "7.20.5"
