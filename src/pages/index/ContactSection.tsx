@@ -1,16 +1,30 @@
 import { Icon } from "@iconify-icon/solid";
+import { useLocation } from "@solidjs/router";
 import classNames from "classnames";
-import { Component } from "solid-js";
+import { Component, createEffect } from "solid-js";
 import ContactForm from "../../components/forms/ContactForm";
 import Section from "../../components/ui/Section";
 import { Classes } from "../../utils/styles";
 
 const ContactSection: Component = () => {
+  const location = useLocation();
+  const hash = () => location.hash;
+
+  // TODO: Investigate if there is a better way
+  // besides doing this for every element we want
+  // to be able to scroll to.
+  let element!: HTMLHeadingElement;
+  createEffect(() => {
+    if (hash() === "#contact") {
+      element.scrollIntoView();
+    }
+  });
   return (
     <Section>
       <div class={classNames(Classes.SECTION_BODY_RESPONSIVE, "space-y-10")}>
         <h1
           id="contact"
+          ref={element}
           class={classNames(
             "scroll-mt-[--header-height]",
             "text-4xl font-display text-center",
