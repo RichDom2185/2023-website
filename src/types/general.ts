@@ -52,7 +52,9 @@ export const technologyToIconMap = Object.freeze({
   [Technology.DOCKER]: "logos:docker-icon",
 }) satisfies { [key in Technology]: string };
 
-export const technologyToColorClassMap = Object.freeze({
+export const technologyToColorClassMap: Readonly<
+  Partial<Record<Technology, string>>
+> = Object.freeze({
   [Technology.CHAKRAUI]: "text-[#319795]",
   [Technology.GITHUB]: "text-[#8250DF]",
   // FIXME: Hacky workaround

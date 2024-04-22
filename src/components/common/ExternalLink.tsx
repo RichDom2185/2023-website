@@ -5,7 +5,11 @@ type Props = {
   hoverClass?: string;
 };
 
-const ExternalLink: ParentComponent<Props> = ({ to, hoverClass, children }) => {
+const ExternalLink: ParentComponent<Props> = ({
+  to,
+  hoverClass = "",
+  children,
+}) => {
   return (
     <a
       classList={{
