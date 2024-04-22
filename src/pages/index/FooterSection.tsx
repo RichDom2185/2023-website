@@ -16,7 +16,7 @@ const FooterSection: Component = () => {
     >
       <p class="select-none">
         <span class="w-full text-sm">
-          Copyright &copy; 2023 Richard Dominick
+          Copyright &copy; 2023-2024 Richard Dominick
         </span>
         <br />
         <span>
