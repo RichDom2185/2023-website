@@ -1,7 +1,6 @@
 import { Component, createMemo } from "solid-js";
 import { Experience } from "../../types/data";
 
-// TODO: Investigate why optional props here are never typed as undefined
 const ExperienceSummary: Component<Experience> = ({
   company,
   position,

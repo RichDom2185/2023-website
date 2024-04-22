@@ -5,7 +5,6 @@ import { Experience } from "../../types/data";
 import { Classes } from "../../utils/styles";
 import TechnologyIcon from "../common/TechnologyIcon";
 
-// TODO: Investigate why optional props here are never typed as undefined
 const ExperienceDisplay: Component<Experience> = ({
   company: companyName,
   position,

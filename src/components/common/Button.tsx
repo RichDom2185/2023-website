@@ -11,7 +11,6 @@ type Props = {
   buttonProps?: ComponentProps<"button">;
 };
 
-// TODO: Investigate why optional props here are never typed as undefined
 const Button: Component<Props> = ({
   label,
   onClick = () => {},
