@@ -1,8 +1,7 @@
-import { parse } from "yaml";
 import { Experience } from "../../types/data";
 
-import educationExperience from "./education.yml?raw";
-import workExperience from "./work.yml?raw";
+import educationExperience from "./education.yml";
+import workExperience from "./work.yml";
 
-export const educationExperiences: Experience[] = parse(educationExperience);
-export const workExperiences: Experience[] = parse(workExperience);
+export const educationExperiences: Experience[] = educationExperience;
+export const workExperiences: Experience[] = workExperience;
