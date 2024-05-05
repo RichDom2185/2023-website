@@ -28,7 +28,7 @@ const TechnologyIcon: Component<Props> = ({
           "peer", // Used for tooltips
           technologyToColorClassMap[tech]
         )}
-        icon={technologyToIconMap[tech]}
+        icon={technologyToIconMap[tech] ?? "fluent-mdl2:unknown"}
       />
       {withTooltip && (
         <Tooltip mode="peer" position={tooltipPosition}>
