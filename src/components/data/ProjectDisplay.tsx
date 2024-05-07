@@ -18,7 +18,12 @@ const ProjectDisplay: Component<Project> = ({
       {description && (
         <SolidMarkdown
           linkTarget="_blank"
-          class={classNames("mt-1", Classes.MARKDOWN_CONTAINER)}
+          class={classNames(
+            "mt-1",
+            Classes.MARKDOWN_CONTAINER,
+            // (Ab)use of hr as a spacer create a margin
+            "[&>hr]:my-2 [&>hr]:h-0 [&>hr]:border-0"
+          )}
           children={description}
         />
       )}
