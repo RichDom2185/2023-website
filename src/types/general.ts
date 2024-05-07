@@ -13,18 +13,44 @@ export enum Technology {
   JAVA = "Java",
   TAILWINDCSS = "TailwindCSS",
   // Only used in data files
+  REDUX = "Redux",
+  GITHUB_ACTIONS = "GitHub Actions",
+  LAMDBDA = "AWS Lambda",
+  VALA = "Vala",
+  GIT = "Git",
+  MANTINEUI = "Mantine UI",
+  NETLIFY = "Netlify",
+  EXPRESS = "Express",
   CHAKRAUI = "Chakra UI",
   VITE = "Vite",
   IONIC = "Ionic",
   GITLAB = "GitLab",
   GITHUB = "GitHub",
+  JUNIT = "JUnit",
+  LIQUID = "Shopify Liquid",
   C = "C",
   LINUX = "Linux",
   SHELL = "Shell Scripting",
   AWS = "Amazon Web Services",
+  FLASK = "Flask",
+  FLUTTER = "Flutter",
+  DART = "Dart",
+  HTML = "HTML",
   LIGHTSAIL = "AWS Lightsail",
   ELIXIR = "Elixir",
   DOCKER = "Docker",
+  DIGITALOCEAN = "DigitalOcean",
+  STREAMLIT = "Streamlit",
+  FASTAPI = "FastAPI",
+  NGINX = "NGINX",
+  NODEJS = "NodeJS",
+  VUE = "Vue",
+  NPM = "NPM",
+  BUN = "Bun",
+  HONO = "Hono",
+  SQLITE = "SQLite",
+  CSS = "CSS",
+  POSTMAN = "Postman",
 }
 
 export const technologyToIconMap = Object.freeze({
@@ -38,25 +64,68 @@ export const technologyToIconMap = Object.freeze({
   [Technology.JEKYLL]: "devicon:jekyll",
   [Technology.JAVA]: "devicon:java",
   [Technology.TAILWINDCSS]: "devicon:tailwindcss",
+  [Technology.REDUX]: "devicon:redux",
+  [Technology.GITHUB_ACTIONS]: "devicon:githubactions",
+  [Technology.LAMDBDA]: "logos:aws-lambda",
+  [Technology.VALA]: "devicon:vala",
+  [Technology.GIT]: "devicon:git",
+  [Technology.MANTINEUI]: "logos:mantine-icon",
+  [Technology.NETLIFY]: "devicon:netlify",
+  [Technology.EXPRESS]: "devicon:express",
   [Technology.CHAKRAUI]: "simple-icons:chakraui",
   [Technology.VITE]: "devicon:vitejs",
   [Technology.IONIC]: "logos:ionic-icon",
   [Technology.GITLAB]: "devicon:gitlab",
   [Technology.GITHUB]: "simple-icons:github",
+  [Technology.JUNIT]: "devicon:junit",
+  [Technology.LIQUID]: "vscode-icons:file-type-liquid",
   [Technology.C]: "devicon:c",
   [Technology.LINUX]: "devicon:linux",
   [Technology.SHELL]: "devicon:bash",
   [Technology.AWS]: "devicon:amazonwebservices-wordmark",
+  [Technology.FLASK]: "devicon:flask",
+  [Technology.FLUTTER]: "logos:flutter",
+  [Technology.DART]: "logos:dart",
+  [Technology.HTML]: "devicon:html5",
   [Technology.LIGHTSAIL]: "logos:aws-lightsail",
   [Technology.ELIXIR]: "devicon:elixir",
   [Technology.DOCKER]: "logos:docker-icon",
+  [Technology.DIGITALOCEAN]: "devicon:digitalocean",
+  [Technology.STREAMLIT]: "devicon:streamlit",
+  [Technology.FASTAPI]: "devicon:fastapi",
+  [Technology.NGINX]: "logos:nginx",
+  [Technology.NODEJS]: "devicon:nodejs",
+  [Technology.VUE]: "devicon:vuejs",
+  [Technology.NPM]: "logos:npm-icon",
+  [Technology.BUN]: "devicon:bun",
+  [Technology.HONO]: "logos:hono",
+  [Technology.SQLITE]: "devicon:sqlite",
+  [Technology.CSS]: "devicon:css3",
+  [Technology.POSTMAN]: "devicon:postman",
 }) satisfies { [key in Technology]: string };
+
+const darkFlip = classNames(
+  "dark:invert",
+  "dark:hover:invert-0",
+
+  "dark:hover:before:bg-[#F5F5F5]/80",
+
+  "dark:before:rounded-full",
+  "dark:before:-z-10",
+  "dark:before:blur-sm",
+
+  "before:absolute",
+  "before:-top-[3px]",
+  "before:-right-[4px]",
+  "before:-left-[4px]",
+  "before:-bottom-[3px]"
+);
 
 export const technologyToColorClassMap: Readonly<
   Partial<Record<Technology, string>>
 > = Object.freeze({
   [Technology.CHAKRAUI]: "text-[#319795]",
-  [Technology.GITHUB]: "text-[#8250DF]",
+  [Technology.GITHUB]: "dark:text-[#8250DF]",
   // FIXME: Hacky workaround
   [Technology.SHELL]: classNames(
     "before:transition-all",
@@ -71,20 +140,9 @@ export const technologyToColorClassMap: Readonly<
     "before:left-[3px]",
     "before:bottom-[2px]"
   ),
-  [Technology.AWS]: classNames(
-    "dark:invert",
-    "dark:hover:invert-0",
-
-    "dark:hover:before:bg-[#F5F5F5]/80",
-
-    "dark:before:rounded-full",
-    "dark:before:-z-10",
-    "dark:before:blur-sm",
-
-    "before:absolute",
-    "before:-top-[3px]",
-    "before:-right-[4px]",
-    "before:-left-[4px]",
-    "before:-bottom-[3px]"
-  ),
+  [Technology.AWS]: darkFlip,
+  [Technology.NETLIFY]: darkFlip,
+  [Technology.EXPRESS]: darkFlip,
+  [Technology.LIQUID]: classNames("text-[2rem]", "-mt-[0.085rem]"),
+  [Technology.FLASK]: classNames(darkFlip, "text-[2rem]"),
 }) satisfies { [key in Technology]?: string };
