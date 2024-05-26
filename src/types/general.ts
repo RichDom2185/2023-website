@@ -52,6 +52,10 @@ export enum Technology {
   CSS = "CSS",
   POSTMAN = "Postman",
   MQTT = "MQTT",
+  SPRING = "Spring",
+  GCP = "Google Cloud Platform",
+  FIREBASE = "Firebase",
+  GRAPHQL = "GraphQL",
 }
 
 export const technologyToIconMap = Object.freeze({
@@ -104,6 +108,10 @@ export const technologyToIconMap = Object.freeze({
   [Technology.CSS]: "devicon:css3",
   [Technology.POSTMAN]: "devicon:postman",
   [Technology.MQTT]: "simple-icons:mqtt",
+  [Technology.SPRING]: "devicon:spring",
+  [Technology.GCP]: "logos:google-cloud",
+  [Technology.FIREBASE]: "logos:firebase",
+  [Technology.GRAPHQL]: "devicon-plain:graphql",
 }) satisfies { [key in Technology]: string };
 
 const darkFlip = classNames(
@@ -147,10 +155,13 @@ export const technologyToColorClassMap: Readonly<
   [Technology.EXPRESS]: darkFlip,
   [Technology.LIQUID]: classNames("text-[2rem]", "-mt-[0.085rem]"),
   [Technology.FLASK]: classNames(darkFlip, "text-[2rem]"),
+  [Technology.DOCKER]: "scale-90",
   [Technology.MQTT]: classNames(
     darkFlip,
     "text-[#660066]",
     "opacity-80",
     "scale-90"
   ),
+  [Technology.GCP]: "scale-90",
+  [Technology.GRAPHQL]: "text-[#E536AB]",
 }) satisfies { [key in Technology]?: string };
