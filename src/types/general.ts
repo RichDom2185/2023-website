@@ -154,7 +154,16 @@ export const technologyToColorClassMap: Readonly<
   [Technology.NETLIFY]: darkFlip,
   [Technology.EXPRESS]: darkFlip,
   [Technology.LIQUID]: classNames("text-[2rem]", "-mt-[0.085rem]"),
-  [Technology.FLASK]: classNames(darkFlip, "text-[2rem]"),
+  [Technology.FLASK]: classNames(
+    darkFlip,
+    "text-[2rem]",
+    "scale-110",
+    "-mt-[0.085rem]",
+    "-mr-[0.170rem]",
+    "-mb-[0.170rem]",
+    "-ml-[0.085rem]"
+  ),
+  [Technology.FLUTTER]: "pl-0.5 pr-1",
   [Technology.DOCKER]: "scale-90",
   [Technology.MQTT]: classNames(
     darkFlip,
