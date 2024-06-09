@@ -16,7 +16,14 @@ const ContactSection: Component = () => {
   let element!: HTMLHeadingElement;
   createEffect(() => {
     if (hash() === "#contact") {
-      element.scrollIntoView();
+      setTimeout(() => {
+        element.scrollIntoView();
+        // Hotfix: to give enough time for (hopefully)
+        // most internet connections to finish loading all
+        // lazily-loaded content before scrolling
+        // to the element, thus ensuring the browser
+        // scrolls to the correct position.
+      }, 300);
     }
   });
   return (
