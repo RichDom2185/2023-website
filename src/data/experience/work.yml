@@ -15,6 +15,31 @@
 #   to: Jul 2014
 #   description: ""
 
+- company: Flexii Pte. Ltd.
+  link: https://flexii.net
+  position: Full-Stack Software Engineer Intern
+  from: May 2024
+  to: Present
+  description: |
+    * Design and develop backend architecture using Java and Spring Boot for long-term scalability and maintainability of the codebase serving thousands of users
+    * Migrated the database from Firestore to PostgreSQL to improve type-safety and performance, while ensuring consistency throughout the migration progcess
+    * Set up Docker, Google Cloud Platform for microservices deployment infrastructure
+    * Integrate the new API clients to React web and Flutter mobile applications for seamless transitioning of over 100 clients to the new system
+    * Enhanced access control frameworks across the whole tech stack to ensure data security and privacy
+  tech:
+    - Java
+    - Spring
+    - Google Cloud Platform
+    - Firebase
+    - PostgreSQL
+    - Flutter
+    - TypeScript
+    - React
+    - JavaScript
+    - GitHub
+    - Docker
+    - NGINX
+
 - company: Source Academy
   link: https://github.com/source-academy
   position: Chief Technology Officer
