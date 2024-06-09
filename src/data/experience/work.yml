@@ -63,7 +63,7 @@
   link: https://github.com/source-academy
   position: Robotics Head
   from: Sep 2022
-  to: Present
+  to: Apr 2024
   description: |
     Created SEKER, a browser-based, backend-less runner for Python/Source programs on the LEGO SPIKE Prime, a MicroPython-based board, complete with Source language bindings for the SPIKE's internal Python API.
 
