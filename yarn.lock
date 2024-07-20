@@ -848,7 +848,14 @@ csstype@^3.1.0:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.3.tgz#d80ff294d114fb0e6ac500fbf85b60137d7eff81"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
-debug@^4.0.0, debug@^4.1.0, debug@^4.3.1:
+debug@^4.0.0:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.5.tgz#e83444eceb9fedd4a1da56d671ae2446a01a6e1e"
+  integrity sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==
+  dependencies:
+    ms "2.1.2"
+
+debug@^4.1.0, debug@^4.3.1:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -1823,9 +1830,9 @@ postcss@^8.4.21, postcss@^8.4.23, postcss@^8.4.39:
     source-map-js "^1.2.0"
 
 property-information@^6.3.0:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/property-information/-/property-information-6.4.1.tgz#de8b79a7415fd2107dfbe65758bb2cc9dfcf60ac"
-  integrity sha512-OHYtXfu5aI2sS2LWFSN5rgJjrQ4pCy8i1jubJLe2QvMF8JJ++HXTUIVWFLfXJoaOfvYYjk2SN8J2wFUWIGXT4w==
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/property-information/-/property-information-6.5.0.tgz#6212fbb52ba757e92ef4fb9d657563b933b7ffec"
+  integrity sha512-PgTgs/BlvHxOu8QuEN7wi5A0OmXaBcHpmCSTehcs6Uuu9IkDIEo13Hy7n898RHfrQ49vKCoGeWZSaAK01nwVig==
 
 proxy-from-env@^1.1.0:
   version "1.1.0"
@@ -1983,9 +1990,9 @@ solid-js@^1.8.15:
     seroval-plugins "^1.0.3"
 
 solid-markdown@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/solid-markdown/-/solid-markdown-2.0.1.tgz#74919870bf70601ab4fa1eb4a735ff5bb25e53e1"
-  integrity sha512-53cTtzleFTYpXydanxmDmxzQFnjx4Xvo0DJqkGznDomBQpd5NrqX+ZK0MEbEd6nH0a7SiFljRPuHnXK6s5hFfA==
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/solid-markdown/-/solid-markdown-2.0.13.tgz#4e67067d0ebddea933c0b23b3f6ed9dc9c05a6be"
+  integrity sha512-IEuR4c5pr51xbVQGjxM2GuZojn8QlaJq1E3WsgEGLx2UQtCAq8ZuyE/ILjYYvV41deWrPvyZb6Ixfsh4O6gH3g==
   dependencies:
     comma-separated-tokens "^2.0.3"
     property-information "^6.3.0"
