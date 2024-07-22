@@ -17,24 +17,30 @@
 
 - company: Flexii Pte. Ltd.
   link: https://flexii.net
-  position: Full-Stack Software Engineer Intern
+  position: Full-Stack Software Engineer
   from: May 2024
-  to: Present
+  to: Aug 2024
   description: |
-    * Design and develop backend architecture using Java and Spring Boot for long-term scalability and maintainability of the codebase serving thousands of users
-    * Migrated the database from Firestore to PostgreSQL to improve type-safety and performance, while ensuring consistency throughout the migration progcess
-    * Set up Docker, Google Cloud Platform for microservices deployment infrastructure
-    * Integrate the new API clients to React web and Flutter mobile applications for seamless transitioning of over 100 clients to the new system
-    * Enhanced access control frameworks across the whole tech stack to ensure data security and privacy
+    * Designed and developed backend architecture using **Java** and **Spring Boot** for long-term scalability and maintainability of the codebase serving **4,000** users
+    * Designed and implemented **RBAC** + **ABAC** access control systems across 3 microservices to ensure data security and privacy
+    * Migrated the database from **Firestore** to **PostgreSQL** to improve type-safety and performance
+    * Implemented consistency checks to ensure integrity and reliability of 10,000 records throughout the migration process
+    * Set up **Docker**, **Google Cloud Platform** for microservices deployment infrastructure
+    * Integrate the new API clients to **React** (web) and **Flutter** (mobile) applications for seamless transitioning of over 100 clients to the new system
+    * Migrated frontend from JavaScript to **TypeScript**, fixing bugs along the way, improving code quality and maintainability of over 20,000 lines of code
+    * Refactored Flutter application architecture, increasing responsiveness and performance by **over 40&#215;**, increasing app accessibility and user satisfaction
+    * Enhanced frontend routing and state management for better user experience, performance and security
   tech:
     - Java
     - Spring
     - Google Cloud Platform
     - Firebase
     - PostgreSQL
-    - Flutter
     - TypeScript
     - React
+    - Redux
+    - Flutter
+    - Dart
     - JavaScript
     - GitHub
     - Docker
