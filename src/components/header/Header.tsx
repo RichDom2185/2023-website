@@ -1,3 +1,4 @@
+import { useLocation } from "@solidjs/router";
 import classNames from "classnames";
 import { Component, createSignal } from "solid-js";
 import { getResume } from "../../api/resume";
@@ -12,12 +13,14 @@ import {
 import { Classes } from "../../utils/styles";
 import Captcha from "../captcha/Captcha";
 import Button from "../common/Button";
+import LinkButton from "../common/LinkButton";
 import Logo from "../sidebar/Logo";
 import SocialLink from "../sidebar/SocialLink";
 
 const Header: Component = () => {
   const [isCaptchaVisible, setIsCaptchaVisible] = createSignal(false);
   const toggleIsCaptchaVisible = () => setIsCaptchaVisible((old) => !old);
+  const location = useLocation();
 
   return (
     <header
@@ -39,16 +42,18 @@ const Header: Component = () => {
         {/* TODO: Remove coupling between Header and Sidebar social links */}
         <Logo />
       </div>
-      {/* TODO: Enable the following buttons when ready */}
+      <LinkButton
+        label="Experiments"
+        href="/experiments"
+        isActive={() => location.pathname === "/experiments"}
+      />
       <Button
         label="Blog"
         rightIcon="heroicons-outline:external-link"
         onClick={() => window.open(BLOG_URL, "_blank")}
       />
+      {/* TODO: Enable the following buttons when ready */}
       {/* <Button label="Apps" onClick={() => alert("apps")} /> */}
-      {/* <Link href="experiments">
-        <Button label="Experiments" />
-      </Link> */}
       <div class="relative">
         <Button
           label="Resume"
