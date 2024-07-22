@@ -22,6 +22,39 @@ const Header: Component = () => {
   const toggleIsCaptchaVisible = () => setIsCaptchaVisible((old) => !old);
   const location = useLocation();
 
+  const buttons = (
+    <>
+      <LinkButton
+        label="Experiments"
+        href="/experiments"
+        isActive={() => location.pathname === "/experiments"}
+      />
+      <Button
+        label="Blog"
+        rightIcon="heroicons-outline:external-link"
+        onClick={() => window.open(BLOG_URL, "_blank")}
+      />
+    </>
+  );
+
+  // TODO: Restore when ready and properly responsive
+  const socialLinks = false && (
+    <div
+      class={classNames(
+        "sm:hidden text-lg space-x-2",
+        // FIXME: Hacky divider implementation
+        "pl-4 border-l border-solid",
+        "border-zinc-900/50 dark:border-stone-400/60"
+      )}
+    >
+      {/* TODO: Remove coupling between Header and Sidebar social links */}
+      <SocialLink inline type={Social.GITHUB} to={SOCIAL_GITHUB_URL} />
+      <SocialLink inline type={Social.GITLAB} to={SOCIAL_GITLAB_URL} />
+      <SocialLink inline type={Social.LINKEDIN} to={SOCIAL_LINKEDIN_URL} />
+      <SocialLink inline type={Social.EMAIL} to={SOCIAL_EMAIL_URL} />
+    </div>
+  );
+
   return (
     <header
       class={classNames(
@@ -39,19 +72,9 @@ const Header: Component = () => {
       )}
     >
       <div class="text-xl grow flex sm:hidden">
-        {/* TODO: Remove coupling between Header and Sidebar social links */}
         <Logo />
       </div>
-      <LinkButton
-        label="Experiments"
-        href="/experiments"
-        isActive={() => location.pathname === "/experiments"}
-      />
-      <Button
-        label="Blog"
-        rightIcon="heroicons-outline:external-link"
-        onClick={() => window.open(BLOG_URL, "_blank")}
-      />
+      {buttons}
       {/* TODO: Enable the following buttons when ready */}
       {/* <Button label="Apps" onClick={() => alert("apps")} /> */}
       <div class="relative">
@@ -89,20 +112,7 @@ const Header: Component = () => {
           </div>
         )}
       </div>
-      <div
-        class={classNames(
-          "sm:hidden text-lg space-x-2",
-          // FIXME: Hacky divider implementation
-          "pl-4 border-l border-solid",
-          "border-zinc-900/50 dark:border-stone-400/60"
-        )}
-      >
-        {/* TODO: Remove coupling between Header and Sidebar social links */}
-        <SocialLink inline type={Social.GITHUB} to={SOCIAL_GITHUB_URL} />
-        <SocialLink inline type={Social.GITLAB} to={SOCIAL_GITLAB_URL} />
-        <SocialLink inline type={Social.LINKEDIN} to={SOCIAL_LINKEDIN_URL} />
-        <SocialLink inline type={Social.EMAIL} to={SOCIAL_EMAIL_URL} />
-      </div>
+      {socialLinks}
     </header>
   );
 };
