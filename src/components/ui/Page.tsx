@@ -15,7 +15,7 @@ const Page: ParentComponent<Props> = ({
   return (
     <div class="flex transition-colors duration-100">
       {withSidebar && <Sidebar hideOnMobile />}
-      <div class="grid grid-cols-1 w-full">
+      <div class="w-full">
         {withHeader && <Header />}
         {children}
       </div>

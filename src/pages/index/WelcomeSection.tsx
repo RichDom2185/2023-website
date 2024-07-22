@@ -13,6 +13,7 @@ const WelcomeSection: Component = () => {
         Classes.BACKGROUND_DYNAMIC_COLOR,
         Classes.TEXT_DYNAMIC_COLOR,
         "min-h-screen px-5 py-6 dark:tracking-wide",
+        "flex flex-col justify-center",
         Classes.TEXT_NORMAL
       )}
     >
