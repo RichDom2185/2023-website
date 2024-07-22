@@ -56,6 +56,9 @@ export enum Technology {
   GCP = "Google Cloud Platform",
   FIREBASE = "Firebase",
   GRAPHQL = "GraphQL",
+  FFMPEG = "FFmpeg",
+  WASM = "WebAssembly",
+  DAISYUI = "daisyUI",
 }
 
 export const technologyToIconMap = Object.freeze({
@@ -112,6 +115,9 @@ export const technologyToIconMap = Object.freeze({
   [Technology.GCP]: "logos:google-cloud",
   [Technology.FIREBASE]: "logos:firebase",
   [Technology.GRAPHQL]: "devicon-plain:graphql",
+  [Technology.FFMPEG]: "logos:ffmpeg-icon",
+  [Technology.WASM]: "devicon:wasm",
+  [Technology.DAISYUI]: "simple-icons:daisyui",
 }) satisfies { [key in Technology]: string };
 
 const darkFlip = classNames(
