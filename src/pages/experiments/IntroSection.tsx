@@ -1,7 +1,6 @@
 import { Icon } from "@iconify-icon/solid";
 import classNames from "classnames";
 import { Component } from "solid-js";
-import Placeholder from "../../components/Placeholder";
 import Section from "../../components/ui/Section";
 import { Classes } from "../../utils/styles";
 
@@ -25,17 +24,10 @@ const IntroSection: Component = () => {
               Classes.TEXT_NORMAL
             )}
           >
-            <Placeholder disableOverlay>
-              <div class="space-y-6">
-                <p>This page is coming soon!</p>
-                <p class="text-sm">
-                  Congrats, you found a hidden page! This page is not quite
-                  ready yet, as it is missing the main bulk of its content. In
-                  the meantime, as a reward for finding this page, enjoy some
-                  test data below:
-                </p>
-              </div>
-            </Placeholder>
+            An archive of my personal projects and experiments. These projects
+            are mostly for fun, learning and/or exploration purposes. They may
+            not be polished or complete, but they are a great way for me to
+            learn new things and try out new ideas.
           </p>
         </div>
       </div>
