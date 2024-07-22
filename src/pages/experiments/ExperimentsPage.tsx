@@ -27,6 +27,7 @@ const ExperimentsPage: Component = () => {
 
   return (
     <Page withHeader withSidebar>
+      <div /* Auto-padded against header */ />
       <IntroSection />
       <Section>
         <div class={classNames(Classes.SECTION_BODY_RESPONSIVE, "space-y-10")}>
