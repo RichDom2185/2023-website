@@ -41,8 +41,8 @@ const AboutSection: Component = () => {
               <u>
                 <em>fast</em>, clean ✨, and <strong>extensible</strong>
               </u>{" "}
-              code. I am currently a Year 3 Computer Science and Business
-              Administration double-degree student at the{" "}
+              code. I am currently a Penultimate Year Computer Science and
+              Business Administration double-degree student at the{" "}
               <ExternalLink to="https://nus.edu.sg">
                 National University of Singapore
               </ExternalLink>

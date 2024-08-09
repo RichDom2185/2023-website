@@ -30,7 +30,7 @@ const WelcomeSection: Component = () => {
             I am Richard Dominick.
           </p>
           <p class="text-xl tracking-wide">
-            Year 3 undergraduate @ NUS Computing & Business, Singapore. Loves
+            Year 4 undergraduate @ NUS Computing & Business, Singapore. Loves
             coding, learning and just exploring new things.
           </p>
           <div class="flex flex-wrap gap-x-6 gap-y-10 items-center select-none">
@@ -58,6 +58,7 @@ const WelcomeSection: Component = () => {
               />
               <span>Visit me on {Social.LINKEDIN}</span>
             </a>
+            <a href="#contact">Contact me</a>
             <span class="italic text-neutral-400">
               Note: some parts of this website are still under construction.
             </span>
