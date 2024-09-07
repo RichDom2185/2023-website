@@ -1,7 +1,10 @@
-name: Deploy site to apex
+name: Deploy site to local repository
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -28,10 +31,8 @@ jobs:
           VITE_REPOSITORY_URL: ${{ secrets.VITE_REPOSITORY_URL }}
           VITE_BLOG_URL: ${{ secrets.VITE_BLOG_URL }}
           VITE_PLACEHOLDERS_ENABLED: ${{ secrets.VITE_PLACEHOLDERS_ENABLED }}
-      - name: Push to deployment repository
+      - name: Push to deployment branch
         uses: peaceiris/actions-gh-pages@v4
         with:
-          external_repository: RichDom2185/richdom2185.github.io
-          deploy_key: ${{ secrets.SITE_DEPLOY_KEY }}
           publish_dir: ./dist
-          cname: richarddominick.me
+          cname: v2.richarddominick.me
