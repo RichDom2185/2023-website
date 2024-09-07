@@ -36,6 +36,7 @@ const ContactForm: Component = () => {
     postMessage(email, telegram, message)
       .then(() => {
         alert("Your message has been sent!");
+        setMessageValue("");
       })
       .catch(() => {
         alert("Something went wrong, please try again later.");
