@@ -25,7 +25,7 @@
     "@solidjs/router": "^0.14.0",
     "axios": "^1.7.4",
     "classnames": "^2.3.2",
-    "solid-hcaptcha": "^0.4.0",
+    "solid-hcaptcha": "^1.0.0",
     "solid-js": "^1.8.15",
     "solid-markdown": "^2.0.0"
   }
