@@ -328,10 +328,15 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz#acad351d582d157bb145535db2a6ff53dd514b5c"
   integrity sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw==
 
-"@hcaptcha/types@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@hcaptcha/types/-/types-1.0.3.tgz#baf10a4361a45ff1c64862dfb8dc9bbc8292a8fe"
-  integrity sha512-1mbU6eSGawRrqeahRrOzZo/SVLI6oZ5/azuBpSyVrRRR96CnS3fOVDWfzxpngfxKD0/I9Rwu6c/3ITqD8rXeTQ==
+"@hcaptcha/loader@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@hcaptcha/loader/-/loader-1.2.4.tgz#541714395a82e27ec0f0e8bd80ef1a0bea141cc3"
+  integrity sha512-3MNrIy/nWBfyVVvMPBKdKrX7BeadgiimW0AL/a/8TohNtJqxoySKgTJEXOQvYwlHemQpUzFrIsK74ody7JiMYw==
+
+"@hcaptcha/types@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@hcaptcha/types/-/types-1.0.4.tgz#54a486a346d4be2a2cf5581ee1683ed312c3fd6a"
+  integrity sha512-4CBrdr9DFC7sYZPRvLol82UVZVne8B2skBGfMDUqPC6q9vzHMwv/cNxXW44EIa6DaFDr+EWNSnKJpHxWr7Q42Q==
 
 "@iconify-icon/solid@^2.0.0":
   version "2.1.1"
@@ -512,11 +517,6 @@
   version "4.22.4"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.22.4.tgz#3dd5d53e900df2a40841882c02e56f866c04d202"
   integrity sha512-j8pPKp53/lq9lMXN57S8cFz0MynJk8OWNuUnXct/9KCpKU7DgU3bYMJhwWmcqC0UU29p8Lr0/7KEVcaM6bf47Q==
-
-"@solid-primitives/script-loader@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@solid-primitives/script-loader/-/script-loader-2.0.2.tgz#d4be5149d4b66d2b001169519e2d4847079e2cba"
-  integrity sha512-TZmUMpWcSpAzBFG46rIWXEQhiF+K1VvQBWsvtOoT3FRwBT64NDUCvjsXdR+0DWErWqZHXI1SXElnMphAu5xeCg==
 
 "@solidjs/router@^0.14.0":
   version "0.14.5"
@@ -2002,13 +2002,13 @@ signal-exit@^4.0.1:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
 
-solid-hcaptcha@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/solid-hcaptcha/-/solid-hcaptcha-0.4.0.tgz#401e0f2c8b9624c0818a2a2eabb83d89665d8a58"
-  integrity sha512-ermYlhU09wPxqNZujVJr6NQI0T/25Ru8rN9a3gGjB83vqpQTapzP3HujmRBDGTF0Ghuy6r0xexhDnOYVTPrxhw==
+solid-hcaptcha@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/solid-hcaptcha/-/solid-hcaptcha-1.0.0.tgz#33e6cfdfc1d760e58fceb3955cb56c0ff0dd7a56"
+  integrity sha512-TV7RY96IHU8TtPyi11kzwGiJF4kABdG8pOWnmOj+53NN37bHu2r+fjXkpNxTRnh0WwCJqjjx6uF6xy0N5VFWqg==
   dependencies:
-    "@hcaptcha/types" "^1.0.3"
-    "@solid-primitives/script-loader" "^2.0.2"
+    "@hcaptcha/loader" "^1.2.4"
+    "@hcaptcha/types" "^1.0.4"
 
 solid-js@^1.8.15:
   version "1.8.23"
