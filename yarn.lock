@@ -519,9 +519,9 @@
   integrity sha512-j8pPKp53/lq9lMXN57S8cFz0MynJk8OWNuUnXct/9KCpKU7DgU3bYMJhwWmcqC0UU29p8Lr0/7KEVcaM6bf47Q==
 
 "@solidjs/router@^0.14.0":
-  version "0.14.5"
-  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.14.5.tgz#d30d4243565062b5cadf24cc5236648d224bc600"
-  integrity sha512-J8ZMntnkDvNCSO9n4HyhlQlGdxYa1mandQLt5LMd0YiWAXGlYzjj+bB+OVtzsH1woWfoEJlVnBnGkMpf2lY/ig==
+  version "0.14.10"
+  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.14.10.tgz#3d130ed9ff3ab283f5294f73a2bf9509e47216a0"
+  integrity sha512-5B8LVgvvXijfXyXWPVLUm7RQ05BhjIpAyRkYVDZtrR3OaSvftXobWc6qSEwk4ICLoGi/IE9CUp2LUdCBIs9AXg==
 
 "@types/babel__core@^7.20.4":
   version "7.20.5"
