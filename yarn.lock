@@ -304,11 +304,11 @@
   integrity sha512-4CBrdr9DFC7sYZPRvLol82UVZVne8B2skBGfMDUqPC6q9vzHMwv/cNxXW44EIa6DaFDr+EWNSnKJpHxWr7Q42Q==
 
 "@iconify-icon/solid@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@iconify-icon/solid/-/solid-2.2.0.tgz#0f445718471f68c3594c378ba57db68439c345d4"
-  integrity sha512-DizrpCXPV9QoVfItxW27pwdS+zfo5Oyc4KtKT+Fjpu+iPellwZCIY3DH/CFvMDxJLdW7Gx9KBGyzj/hLatBzpQ==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@iconify-icon/solid/-/solid-2.3.0.tgz#84473918ec2aafc41e83113c6d8dcc0d71f778a7"
+  integrity sha512-Wz2VZ4SBjP9LHy7VSUWYneCsZhYjY8lmvf7z5ddiqzQsmHYg79AVWjptZSh/nP/2k7JqrJD2prvdU05/P3sjrw==
   dependencies:
-    iconify-icon "^2.2.0"
+    iconify-icon "^2.3.0"
 
 "@iconify/types@^2.0.0":
   version "2.0.0"
@@ -1028,10 +1028,10 @@ html-entities@2.3.3:
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-2.3.3.tgz#117d7626bece327fc8baace8868fa6f5ef856e46"
   integrity sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==
 
-iconify-icon@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/iconify-icon/-/iconify-icon-2.2.0.tgz#4bbb1314acd0fdffae9cd46d9e7a55cf16e49489"
-  integrity sha512-PDYyUWgsI8tp5uTwRAfwfrmjkC9WEzWbUFuByAiZAIuCFigho7u+ApIYJ9fKoZyyp8SBCpnq/dVHewNv4or6bg==
+iconify-icon@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/iconify-icon/-/iconify-icon-2.3.0.tgz#8441b01f241ef317b9062db238fd803ecb7042c8"
+  integrity sha512-C0beI9oTDxQz6voI5CKl7MiJf0Lw4UU8K4G4t6pcUDClLmCvuMOpcvd8MAztQ2SfoH0iv7WHdxBFjekKPFKH2Q==
   dependencies:
     "@iconify/types" "^2.0.0"
 
