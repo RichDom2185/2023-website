@@ -293,10 +293,10 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.25.1.tgz#7d79922cb2d88f9048f06393dbf62d2e4accb584"
   integrity sha512-Y1EQdcfwMSeQN/ujR5VayLOJ1BHaK+ssyk0AEzPjC+t1lITgsnccPqFjb6V+LsTp/9Iov4ysfjxLaGJ9RPtkVg==
 
-"@hcaptcha/loader@^1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@hcaptcha/loader/-/loader-1.2.4.tgz#541714395a82e27ec0f0e8bd80ef1a0bea141cc3"
-  integrity sha512-3MNrIy/nWBfyVVvMPBKdKrX7BeadgiimW0AL/a/8TohNtJqxoySKgTJEXOQvYwlHemQpUzFrIsK74ody7JiMYw==
+"@hcaptcha/loader@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@hcaptcha/loader/-/loader-2.0.0.tgz#674b14262ca3d3302f39628a46bdfbb6f3f903f1"
+  integrity sha512-fFQH6ApU/zCCl6Y1bnbsxsp1Er/lKX+qlgljrpWDeFcenpEtoP68hExlKSXECospzKLeSWcr06cbTjlR/x3IJA==
 
 "@hcaptcha/types@^1.0.4":
   version "1.0.4"
@@ -1802,11 +1802,11 @@ signal-exit@^4.0.1:
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
 
 solid-hcaptcha@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/solid-hcaptcha/-/solid-hcaptcha-1.0.0.tgz#33e6cfdfc1d760e58fceb3955cb56c0ff0dd7a56"
-  integrity sha512-TV7RY96IHU8TtPyi11kzwGiJF4kABdG8pOWnmOj+53NN37bHu2r+fjXkpNxTRnh0WwCJqjjx6uF6xy0N5VFWqg==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/solid-hcaptcha/-/solid-hcaptcha-1.1.0.tgz#872e91b397971063c465b14adfca2317eb935cb3"
+  integrity sha512-IH4qBF5qSa777yjf3AatRJrEtiMWsEPZUWvW2bKOm+gIHqrxl12ueKXHoCAQsinzhFQDNUTFZpvqKt6aFmsODg==
   dependencies:
-    "@hcaptcha/loader" "^1.2.4"
+    "@hcaptcha/loader" "^2.0.0"
     "@hcaptcha/types" "^1.0.4"
 
 solid-js@^1.9.3:
