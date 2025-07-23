@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@solidjs/router": "^0.15.2",
-    "axios": "^1.8.2",
+    "axios": "^1.11.0",
     "classnames": "^2.3.2",
     "solid-hcaptcha": "^1.0.0",
     "solid-js": "^1.9.3",
