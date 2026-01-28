@@ -305,12 +305,12 @@
   resolved "https://registry.yarnpkg.com/@hcaptcha/types/-/types-1.0.4.tgz#54a486a346d4be2a2cf5581ee1683ed312c3fd6a"
   integrity sha512-4CBrdr9DFC7sYZPRvLol82UVZVne8B2skBGfMDUqPC6q9vzHMwv/cNxXW44EIa6DaFDr+EWNSnKJpHxWr7Q42Q==
 
-"@iconify-icon/solid@^2.2.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@iconify-icon/solid/-/solid-2.3.0.tgz#84473918ec2aafc41e83113c6d8dcc0d71f778a7"
-  integrity sha512-Wz2VZ4SBjP9LHy7VSUWYneCsZhYjY8lmvf7z5ddiqzQsmHYg79AVWjptZSh/nP/2k7JqrJD2prvdU05/P3sjrw==
+"@iconify-icon/solid@^3.0.0":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@iconify-icon/solid/-/solid-3.0.3.tgz#453f7e3fec952471a6a21706d7a0c3bbd0b18b29"
+  integrity sha512-VUM8/gscfrU0e6dUWjitdsJrNzYoY1bGTp1+gfZIAbvo+tIGcP9bD3WAvFb6pHaCYL/5X6erZUUn8pL0c0xX9Q==
   dependencies:
-    iconify-icon "^2.3.0"
+    iconify-icon "^3.0.2"
 
 "@iconify/types@^2.0.0":
   version "2.0.0"
@@ -1079,10 +1079,10 @@ html-entities@2.3.3:
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-2.3.3.tgz#117d7626bece327fc8baace8868fa6f5ef856e46"
   integrity sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==
 
-iconify-icon@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/iconify-icon/-/iconify-icon-2.3.0.tgz#8441b01f241ef317b9062db238fd803ecb7042c8"
-  integrity sha512-C0beI9oTDxQz6voI5CKl7MiJf0Lw4UU8K4G4t6pcUDClLmCvuMOpcvd8MAztQ2SfoH0iv7WHdxBFjekKPFKH2Q==
+iconify-icon@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/iconify-icon/-/iconify-icon-3.0.2.tgz#32605fb5817d463789fbbbf78e6d0ea9cbb817bf"
+  integrity sha512-DYPAumiUeUeT/GHT8x2wrAVKn1FqZJqFH0Y5pBefapWRreV1BBvqBVMb0020YQ2njmbR59r/IathL2d2OrDrxA==
   dependencies:
     "@iconify/types" "^2.0.0"
 
