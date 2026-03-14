@@ -28,8 +28,8 @@ importers:
         version: 2.1.1(solid-js@1.9.11)
     devDependencies:
       '@iconify-icon/solid':
-        specifier: ^2.2.0
-        version: 2.3.0(solid-js@1.9.11)
+        specifier: ^3.0.0
+        version: 3.0.3(solid-js@1.9.11)
       '@rollup/plugin-yaml':
         specifier: ^4.1.2
         version: 4.1.2(rollup@4.59.0)
@@ -313,10 +313,10 @@ packages:
   '@hcaptcha/types@1.0.4':
     resolution: {integrity: sha512-4CBrdr9DFC7sYZPRvLol82UVZVne8B2skBGfMDUqPC6q9vzHMwv/cNxXW44EIa6DaFDr+EWNSnKJpHxWr7Q42Q==}
 
-  '@iconify-icon/solid@2.3.0':
-    resolution: {integrity: sha512-Wz2VZ4SBjP9LHy7VSUWYneCsZhYjY8lmvf7z5ddiqzQsmHYg79AVWjptZSh/nP/2k7JqrJD2prvdU05/P3sjrw==}
+  '@iconify-icon/solid@3.0.3':
+    resolution: {integrity: sha512-VUM8/gscfrU0e6dUWjitdsJrNzYoY1bGTp1+gfZIAbvo+tIGcP9bD3WAvFb6pHaCYL/5X6erZUUn8pL0c0xX9Q==}
     peerDependencies:
-      solid-js: '>=1'
+      solid-js: '>=1.0.0'
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -922,8 +922,8 @@ packages:
   html-entities@2.3.3:
     resolution: {integrity: sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==}
 
-  iconify-icon@2.3.0:
-    resolution: {integrity: sha512-C0beI9oTDxQz6voI5CKl7MiJf0Lw4UU8K4G4t6pcUDClLmCvuMOpcvd8MAztQ2SfoH0iv7WHdxBFjekKPFKH2Q==}
+  iconify-icon@3.0.2:
+    resolution: {integrity: sha512-DYPAumiUeUeT/GHT8x2wrAVKn1FqZJqFH0Y5pBefapWRreV1BBvqBVMb0020YQ2njmbR59r/IathL2d2OrDrxA==}
 
   inline-style-parser@0.1.1:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
@@ -1718,9 +1718,9 @@ snapshots:
 
   '@hcaptcha/types@1.0.4': {}
 
-  '@iconify-icon/solid@2.3.0(solid-js@1.9.11)':
+  '@iconify-icon/solid@3.0.3(solid-js@1.9.11)':
     dependencies:
-      iconify-icon: 2.3.0
+      iconify-icon: 3.0.2
       solid-js: 1.9.11
 
   '@iconify/types@2.0.0': {}
@@ -2228,7 +2228,7 @@ snapshots:
 
   html-entities@2.3.3: {}
 
-  iconify-icon@2.3.0:
+  iconify-icon@3.0.2:
     dependencies:
       '@iconify/types': 2.0.0
 
