@@ -16,11 +16,11 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 24
-          cache: yarn
+          cache: pnpm
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: Build site
-        run: yarn build
+        run: pnpm build
         env:
           VITE_HCAPTCHA_SITEKEY: ${{ secrets.VITE_HCAPTCHA_SITEKEY }}
           VITE_BACKEND_URL: ${{ secrets.VITE_BACKEND_URL }}
