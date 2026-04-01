@@ -13,7 +13,7 @@ importers:
         version: 0.16.1(solid-js@1.9.12)
       axios:
         specifier: ^1.13.5
-        version: 1.14.1
+        version: 1.14.0
       classnames:
         specifier: ^2.3.2
         version: 2.5.1
@@ -28,8 +28,8 @@ importers:
         version: 2.1.1(solid-js@1.9.12)
     devDependencies:
       '@iconify-icon/solid':
-        specifier: ^2.2.0
-        version: 2.3.0(solid-js@1.9.12)
+        specifier: ^3.0.0
+        version: 3.0.3(solid-js@1.9.12)
       '@rollup/plugin-yaml':
         specifier: ^4.1.2
         version: 4.1.2(rollup@4.59.0)
@@ -313,10 +313,10 @@ packages:
   '@hcaptcha/types@1.0.4':
     resolution: {integrity: sha512-4CBrdr9DFC7sYZPRvLol82UVZVne8B2skBGfMDUqPC6q9vzHMwv/cNxXW44EIa6DaFDr+EWNSnKJpHxWr7Q42Q==}
 
-  '@iconify-icon/solid@2.3.0':
-    resolution: {integrity: sha512-Wz2VZ4SBjP9LHy7VSUWYneCsZhYjY8lmvf7z5ddiqzQsmHYg79AVWjptZSh/nP/2k7JqrJD2prvdU05/P3sjrw==}
+  '@iconify-icon/solid@3.0.3':
+    resolution: {integrity: sha512-VUM8/gscfrU0e6dUWjitdsJrNzYoY1bGTp1+gfZIAbvo+tIGcP9bD3WAvFb6pHaCYL/5X6erZUUn8pL0c0xX9Q==}
     peerDependencies:
-      solid-js: '>=1'
+      solid-js: '>=1.0.0'
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -679,8 +679,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
-  axios@1.14.1:
-    resolution: {integrity: sha512-vF/aB4vrIzLyOb2TB9gpuE8gusNHpZqk2ZZcAqSnRjW5IcY7tFSBEurD2tbakohj0Rw5xMHYwjSqOGSfr0iewA==}
+  axios@1.14.0:
+    resolution: {integrity: sha512-3Y8yrqLSwjuzpXuZ0oIYZ/XGgLwUIBU3uLvbcpb0pidD9ctpShJd43KSlEEkVQg6DS0G9NKyzOvBfUtDKEyHvQ==}
 
   babel-plugin-jsx-dom-expressions@0.40.5:
     resolution: {integrity: sha512-8TFKemVLDYezqqv4mWz+PhRrkryTzivTGu0twyLrOkVZ0P63COx2Y04eVsUjFlwSOXui1z3P3Pn209dokWnirg==}
@@ -918,8 +918,8 @@ packages:
   html-entities@2.3.3:
     resolution: {integrity: sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==}
 
-  iconify-icon@2.3.0:
-    resolution: {integrity: sha512-C0beI9oTDxQz6voI5CKl7MiJf0Lw4UU8K4G4t6pcUDClLmCvuMOpcvd8MAztQ2SfoH0iv7WHdxBFjekKPFKH2Q==}
+  iconify-icon@3.0.2:
+    resolution: {integrity: sha512-DYPAumiUeUeT/GHT8x2wrAVKn1FqZJqFH0Y5pBefapWRreV1BBvqBVMb0020YQ2njmbR59r/IathL2d2OrDrxA==}
 
   inline-style-parser@0.1.1:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
@@ -1207,9 +1207,6 @@ packages:
   pirates@4.0.7:
     resolution: {integrity: sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==}
     engines: {node: '>= 6'}
-
-  plain-crypto-js@4.2.1:
-    resolution: {integrity: sha512-Wv41p4/aEMq03JjDqi0JxPYT4aoMbbQMSM8ur4QkjvjGEeuYvI7rGkqLcOZ7K1iThQGvpNvJnxRWcNodCNuEEQ==}
 
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
@@ -1718,9 +1715,9 @@ snapshots:
 
   '@hcaptcha/types@1.0.4': {}
 
-  '@iconify-icon/solid@2.3.0(solid-js@1.9.12)':
+  '@iconify-icon/solid@3.0.3(solid-js@1.9.12)':
     dependencies:
-      iconify-icon: 2.3.0
+      iconify-icon: 3.0.2
       solid-js: 1.9.12
 
   '@iconify/types@2.0.0': {}
@@ -1983,11 +1980,10 @@ snapshots:
       postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  axios@1.14.1:
+  axios@1.14.0:
     dependencies:
       follow-redirects: 1.15.11
       form-data: 4.0.5
-      plain-crypto-js: 4.2.1
       proxy-from-env: 2.1.0
     transitivePeerDependencies:
       - debug
@@ -2227,7 +2223,7 @@ snapshots:
 
   html-entities@2.3.3: {}
 
-  iconify-icon@2.3.0:
+  iconify-icon@3.0.2:
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -2542,8 +2538,6 @@ snapshots:
   pify@2.3.0: {}
 
   pirates@4.0.7: {}
-
-  plain-crypto-js@4.2.1: {}
 
   postcss-import@15.1.0(postcss@8.5.8):
     dependencies:
