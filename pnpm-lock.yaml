@@ -13,7 +13,7 @@ importers:
         version: 0.16.1(solid-js@1.9.12)
       axios:
         specifier: ^1.13.5
-        version: 1.14.1
+        version: 1.14.0
       classnames:
         specifier: ^2.3.2
         version: 2.5.1
@@ -35,7 +35,7 @@ importers:
         version: 4.1.2(rollup@4.59.0)
       '@types/node':
         specifier: ^24.0.0
-        version: 24.12.0
+        version: 24.12.2
       autoprefixer:
         specifier: ^10.4.13
         version: 10.4.27(postcss@8.5.8)
@@ -50,10 +50,10 @@ importers:
         version: 5.9.3
       vite:
         specifier: ^8.0.0
-        version: 8.0.3(@types/node@24.12.0)(esbuild@0.27.2)(jiti@1.21.7)
+        version: 8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@1.21.7)
       vite-plugin-solid:
         specifier: ^2.11.11
-        version: 2.11.11(solid-js@1.9.12)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.2)(jiti@1.21.7))
+        version: 2.11.11(solid-js@1.9.12)(vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@1.21.7))
 
 packages:
 
@@ -644,8 +644,8 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@24.12.0':
-    resolution: {integrity: sha512-GYDxsZi3ChgmckRT9HPU0WEhKLP08ev/Yfcq2AstjrDASOYCSXeyjDsHg4v5t4jOj7cyDX3vmprafKlWIG9MXQ==}
+  '@types/node@24.12.2':
+    resolution: {integrity: sha512-A1sre26ke7HDIuY/M23nd9gfB+nrmhtYyMINbjI1zHJxYteKR6qSMX56FsmjMcDb3SMcjJg5BiRRgOCC/yBD0g==}
 
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
@@ -679,8 +679,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
-  axios@1.14.1:
-    resolution: {integrity: sha512-vF/aB4vrIzLyOb2TB9gpuE8gusNHpZqk2ZZcAqSnRjW5IcY7tFSBEurD2tbakohj0Rw5xMHYwjSqOGSfr0iewA==}
+  axios@1.14.0:
+    resolution: {integrity: sha512-3Y8yrqLSwjuzpXuZ0oIYZ/XGgLwUIBU3uLvbcpb0pidD9ctpShJd43KSlEEkVQg6DS0G9NKyzOvBfUtDKEyHvQ==}
 
   babel-plugin-jsx-dom-expressions@0.40.5:
     resolution: {integrity: sha512-8TFKemVLDYezqqv4mWz+PhRrkryTzivTGu0twyLrOkVZ0P63COx2Y04eVsUjFlwSOXui1z3P3Pn209dokWnirg==}
@@ -1207,9 +1207,6 @@ packages:
   pirates@4.0.7:
     resolution: {integrity: sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==}
     engines: {node: '>= 6'}
-
-  plain-crypto-js@4.2.1:
-    resolution: {integrity: sha512-Wv41p4/aEMq03JjDqi0JxPYT4aoMbbQMSM8ur4QkjvjGEeuYvI7rGkqLcOZ7K1iThQGvpNvJnxRWcNodCNuEEQ==}
 
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
@@ -1951,7 +1948,7 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@24.12.0':
+  '@types/node@24.12.2':
     dependencies:
       undici-types: 7.16.0
 
@@ -1983,11 +1980,10 @@ snapshots:
       postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  axios@1.14.1:
+  axios@1.14.0:
     dependencies:
       follow-redirects: 1.15.11
       form-data: 4.0.5
-      plain-crypto-js: 4.2.1
       proxy-from-env: 2.1.0
     transitivePeerDependencies:
       - debug
@@ -2543,8 +2539,6 @@ snapshots:
 
   pirates@4.0.7: {}
 
-  plain-crypto-js@4.2.1: {}
-
   postcss-import@15.1.0(postcss@8.5.8):
     dependencies:
       postcss: 8.5.8
@@ -2868,7 +2862,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite-plugin-solid@2.11.11(solid-js@1.9.12)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.2)(jiti@1.21.7)):
+  vite-plugin-solid@2.11.11(solid-js@1.9.12)(vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@1.21.7)):
     dependencies:
       '@babel/core': 7.29.0
       '@types/babel__core': 7.20.5
@@ -2876,12 +2870,12 @@ snapshots:
       merge-anything: 5.1.7
       solid-js: 1.9.12
       solid-refresh: 0.6.3(solid-js@1.9.12)
-      vite: 8.0.3(@types/node@24.12.0)(esbuild@0.27.2)(jiti@1.21.7)
-      vitefu: 1.1.2(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.2)(jiti@1.21.7))
+      vite: 8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@1.21.7)
+      vitefu: 1.1.2(vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@1.21.7))
     transitivePeerDependencies:
       - supports-color
 
-  vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.2)(jiti@1.21.7):
+  vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@1.21.7):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -2889,13 +2883,13 @@ snapshots:
       rolldown: 1.0.0-rc.12
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.12.0
+      '@types/node': 24.12.2
       esbuild: 0.27.2
       fsevents: 2.3.3
       jiti: 1.21.7
 
-  vitefu@1.1.2(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.2)(jiti@1.21.7)):
+  vitefu@1.1.2(vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@1.21.7)):
     optionalDependencies:
-      vite: 8.0.3(@types/node@24.12.0)(esbuild@0.27.2)(jiti@1.21.7)
+      vite: 8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@1.21.7)
 
   yallist@3.1.1: {}
