@@ -13,7 +13,7 @@ importers:
         version: 0.16.1(solid-js@1.9.12)
       axios:
         specifier: ^1.15.0
-        version: 1.15.2
+        version: 1.16.0
       classnames:
         specifier: ^2.3.2
         version: 2.5.1
@@ -682,8 +682,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
-  axios@1.15.2:
-    resolution: {integrity: sha512-wLrXxPtcrPTsNlJmKjkPnNPK2Ihe0hn0wGSaTEiHRPxwjvJwT3hKmXF4dpqxmPO9SoNb2FsYXj/xEo0gHN+D5A==}
+  axios@1.16.0:
+    resolution: {integrity: sha512-6hp5CwvTPlN2A31g5dxnwAX0orzM7pmCRDLnZSX772mv8WDqICwFjowHuPs04Mc8deIld1+ejhtaMn5vp6b+1w==}
 
   babel-plugin-jsx-dom-expressions@0.40.6:
     resolution: {integrity: sha512-v3P1MW46Lm7VMpAkq0QfyzLWWkC8fh+0aE5Km4msIgDx5kjenHU0pF2s+4/NH8CQn/kla6+Hvws+2AF7bfV5qQ==}
@@ -1985,7 +1985,7 @@ snapshots:
       postcss: 8.5.10
       postcss-value-parser: 4.2.0
 
-  axios@1.15.2:
+  axios@1.16.0:
     dependencies:
       follow-redirects: 1.16.0
       form-data: 4.0.5
