@@ -21,7 +21,7 @@
     "vite-plugin-solid": "^2.11.11"
   },
   "dependencies": {
-    "@solidjs/router": "^0.16.0",
+    "@solidjs/router": "^1.0.0",
     "axios": "^1.15.0",
     "classnames": "^2.3.2",
     "solid-hcaptcha": "^1.0.0",
