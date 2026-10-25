@@ -28,8 +28,8 @@ importers:
         version: 2.1.1(solid-js@1.9.17)
     devDependencies:
       '@iconify-icon/solid':
-        specifier: ^2.2.0
-        version: 2.3.0(solid-js@1.9.17)
+        specifier: ^3.0.0
+        version: 3.0.5(solid-js@1.9.17)
       '@rollup/plugin-yaml':
         specifier: ^5.0.0
         version: 5.0.0(rollup@4.59.0)
@@ -304,10 +304,10 @@ packages:
   '@hcaptcha/types@1.0.4':
     resolution: {integrity: sha512-4CBrdr9DFC7sYZPRvLol82UVZVne8B2skBGfMDUqPC6q9vzHMwv/cNxXW44EIa6DaFDr+EWNSnKJpHxWr7Q42Q==}
 
-  '@iconify-icon/solid@2.3.0':
-    resolution: {integrity: sha512-Wz2VZ4SBjP9LHy7VSUWYneCsZhYjY8lmvf7z5ddiqzQsmHYg79AVWjptZSh/nP/2k7JqrJD2prvdU05/P3sjrw==}
+  '@iconify-icon/solid@3.0.5':
+    resolution: {integrity: sha512-fnvU5cqy7ES85gGq5oOusCKqNVh9fBHNAvgIoo47A419+ail5ctpdkRONDMilczjIqERa4J5GSRrSLm8TAqXSw==}
     peerDependencies:
-      solid-js: '>=1'
+      solid-js: '>=1.0.0'
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -933,8 +933,8 @@ packages:
     resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==}
     engines: {node: '>= 6'}
 
-  iconify-icon@2.3.0:
-    resolution: {integrity: sha512-C0beI9oTDxQz6voI5CKl7MiJf0Lw4UU8K4G4t6pcUDClLmCvuMOpcvd8MAztQ2SfoH0iv7WHdxBFjekKPFKH2Q==}
+  iconify-icon@3.0.4:
+    resolution: {integrity: sha512-au7IER/1evWjPP1rtueNnBdge9E9ocoPfQ87RYTLkRMYpNt87xn5oy6i5U2qRp+wXul5aV0VyPuZAf7rt+jpRg==}
 
   inline-style-parser@0.1.1:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
@@ -1718,9 +1718,9 @@ snapshots:
 
   '@hcaptcha/types@1.0.4': {}
 
-  '@iconify-icon/solid@2.3.0(solid-js@1.9.17)':
+  '@iconify-icon/solid@3.0.5(solid-js@1.9.17)':
     dependencies:
-      iconify-icon: 2.3.0
+      iconify-icon: 3.0.4
       solid-js: 1.9.17
 
   '@iconify/types@2.0.0': {}
@@ -2245,7 +2245,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  iconify-icon@2.3.0:
+  iconify-icon@3.0.4:
     dependencies:
       '@iconify/types': 2.0.0
 
